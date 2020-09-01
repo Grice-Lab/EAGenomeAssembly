@@ -1,0 +1,41 @@
+Sender: LSF System <jszostek@avarice>
+Subject: Job 2744194: <sh Run_CutAdapt_0.sh> in cluster <PMACS-SCC> Done
+
+Job <sh Run_CutAdapt_0.sh> was submitted from host <avarice> by user <acampbe> in cluster <PMACS-SCC> at Sat Dec 21 14:10:59 2019
+Job was executed on host(s) <avarice>, in queue <grice_normal>, as user <acampbe> in cluster <PMACS-SCC> at Sat Dec 21 14:10:59 2019
+</home/acampbe> was used as the home directory.
+</home/acampbe/Club_Grice/EAGenomeAssembly/TrimGaloreShells> was used as the working directory.
+Started at Sat Dec 21 14:10:59 2019
+Terminated at Sat Dec 21 14:45:02 2019
+Results reported at Sat Dec 21 14:45:02 2019
+
+Your job looked like:
+
+------------------------------------------------------------
+# LSBATCH: User input
+sh Run_CutAdapt_0.sh
+------------------------------------------------------------
+
+Successfully completed.
+
+Resource usage summary:
+
+    CPU time :                                   2088.88 sec.
+    Max Memory :                                 16 MB
+    Average Memory :                             14.13 MB
+    Total Requested Memory :                     -
+    Delta Memory :                               -
+    Max Swap :                                   17592186044415 MB
+    Max Processes :                              6
+    Max Threads :                                7
+    Run time :                                   2036 sec.
+    Turnaround time :                            2043 sec.
+
+The output (if any) follows:
+
+
+
+PS:
+
+Read file <testing_trimgalore.e> for stderr output of this job.
+

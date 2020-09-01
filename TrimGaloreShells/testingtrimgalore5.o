@@ -1,0 +1,41 @@
+Sender: LSF System <jszostek@avarice>
+Subject: Job 2744198: <sh Run_CutAdapt_5.sh> in cluster <PMACS-SCC> Done
+
+Job <sh Run_CutAdapt_5.sh> was submitted from host <avarice> by user <acampbe> in cluster <PMACS-SCC> at Sat Dec 21 14:12:16 2019
+Job was executed on host(s) <avarice>, in queue <grice_normal>, as user <acampbe> in cluster <PMACS-SCC> at Sat Dec 21 14:12:17 2019
+</home/acampbe> was used as the home directory.
+</home/acampbe/Club_Grice/EAGenomeAssembly/TrimGaloreShells> was used as the working directory.
+Started at Sat Dec 21 14:12:17 2019
+Terminated at Sat Dec 21 14:47:33 2019
+Results reported at Sat Dec 21 14:47:33 2019
+
+Your job looked like:
+
+------------------------------------------------------------
+# LSBATCH: User input
+sh Run_CutAdapt_5.sh
+------------------------------------------------------------
+
+Successfully completed.
+
+Resource usage summary:
+
+    CPU time :                                   2166.16 sec.
+    Max Memory :                                 16 MB
+    Average Memory :                             14.65 MB
+    Total Requested Memory :                     -
+    Delta Memory :                               -
+    Max Swap :                                   17592186044415 MB
+    Max Processes :                              6
+    Max Threads :                                7
+    Run time :                                   2116 sec.
+    Turnaround time :                            2117 sec.
+
+The output (if any) follows:
+
+
+
+PS:
+
+Read file <testingtrimgalore5.e> for stderr output of this job.
+

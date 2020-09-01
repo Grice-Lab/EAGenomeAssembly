@@ -1,5 +1,5 @@
 # EAGenomeAssembly
-This folder will hold necessary scripts/shells/configuration files used to assemble bacterial genomes in the great HiSeq influx of 2019. Please note that with the exception of maybe one example file, we will not keep the sequencing reads/results
+This repo will hold necessary scripts/shells/configuration files used to assemble bacterial genomes in the great HiSeq influx of 2019. Please note that with the exception of maybe one example file, we will not keep the sequencing reads/results
  themselves on here, and I'm trying to build this pipeline such that you enter file locations (on LPC, for example) as commands to the shellscripts and it's otherwise plug and chug. If you are reading this documentation , '>' indicates a line of code run on the command line. Note that these are merely example calls, and you will have to input your own LPC paths/ settings depending on where you're keeping your input/output files. Output from the HiSeq WGS run from PennChop (late 2019, DFU + Flowers flora) is in /project/grice/storage/HiSeq/WGS/HiSeq_19, along with assembled contigs and various QC step outputs. "HiSeq_19_Directory.README", in that directory, is a text file containing a brief overview of the locations of files therein. 
 
 

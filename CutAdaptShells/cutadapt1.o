@@ -1,0 +1,3011 @@
+Sender: LSF System <jszostek@avarice>
+Subject: Job 2710863: <sh Run_CutAdapt_1.sh> in cluster <PMACS-SCC> Done
+
+Job <sh Run_CutAdapt_1.sh> was submitted from host <avarice> by user <acampbe> in cluster <PMACS-SCC> at Sun Dec 15 14:05:32 2019
+Job was executed on host(s) <avarice>, in queue <grice_normal>, as user <acampbe> in cluster <PMACS-SCC> at Sun Dec 15 14:05:33 2019
+</home/acampbe> was used as the home directory.
+</home/acampbe/Club_Grice/EAGenomeAssembly/CutAdaptShells> was used as the working directory.
+Started at Sun Dec 15 14:05:33 2019
+Terminated at Sun Dec 15 14:31:55 2019
+Results reported at Sun Dec 15 14:31:55 2019
+
+Your job looked like:
+
+------------------------------------------------------------
+# LSBATCH: User input
+sh Run_CutAdapt_1.sh
+------------------------------------------------------------
+
+Successfully completed.
+
+Resource usage summary:
+
+    CPU time :                                   1553.18 sec.
+    Max Memory :                                 10 MB
+    Average Memory :                             9.94 MB
+    Total Requested Memory :                     -
+    Delta Memory :                               -
+    Max Swap :                                   -
+    Max Processes :                              4
+    Max Threads :                                5
+    Run time :                                   1582 sec.
+    Turnaround time :                            1583 sec.
+
+The output (if any) follows:
+
+This is cutadapt 1.15 with Python 2.7.14
+Command line parameters: -a TAAGGCGATTCTAGCT -A TAAGGCGATTCTAGCT -o /project/grice/storage/HiSeq/WGS/HiSeq_19/TrimmedFastqs/DORN2166_trimmed_R1.fastq -p /project/grice/storage/HiSeq/WGS/HiSeq_19/TrimmedFastqs/DORN2166_trimmed_R2.fastq /project/grice/storage/HiSeq/WGS/HiSeq_19/DORN2166_R1.fastq /project/grice/storage/HiSeq/WGS/HiSeq_19/DORN2166_R2.fastq
+Running on 1 core
+Trimming 2 adapters with at most 10.0% errors in paired-end mode ...
+Finished in 62.29 s (33 us/read; 1.81 M reads/minute).
+
+=== Summary ===
+
+Total read pairs processed:          1,877,802
+  Read 1 with adapter:                 114,897 (6.1%)
+  Read 2 with adapter:                  58,841 (3.1%)
+Pairs written (passing filters):     1,877,802 (100.0%)
+
+Total basepairs processed:   473,206,104 bp
+  Read 1:   236,603,052 bp
+  Read 2:   236,603,052 bp
+Total written (filtered):    472,403,263 bp (99.8%)
+  Read 1:   235,984,343 bp
+  Read 2:   236,418,920 bp
+
+=== First read: Adapter 1 ===
+
+Sequence: TAAGGCGATTCTAGCT; Type: regular 3'; Length: 16; Trimmed: 114897 times.
+
+No. of allowed errors:
+0-9 bp: 0; 10-16 bp: 1
+
+Bases preceding removed adapters:
+  A: 15.3%
+  C: 60.7%
+  G: 7.5%
+  T: 16.6%
+  none/other: 0.0%
+
+Overview of removed sequences
+length	count	expect	max.err	error counts
+3	52770	29340.7	0	52770
+4	11112	7335.2	0	11112
+5	7751	1833.8	0	7751
+6	7649	458.4	0	7649
+7	8297	114.6	0	8297
+8	8511	28.7	0	8511
+9	33	7.2	0	12 21
+10	7048	1.8	1	5 7043
+11	6358	0.4	1	3 6355
+12	5365	0.1	1	1 5364
+13	2	0.0	1	0 2
+14	1	0.0	1	0 1
+
+=== Second read: Adapter 2 ===
+
+Sequence: TAAGGCGATTCTAGCT; Type: regular 3'; Length: 16; Trimmed: 58841 times.
+
+No. of allowed errors:
+0-9 bp: 0; 10-16 bp: 1
+
+Bases preceding removed adapters:
+  A: 29.8%
+  C: 13.8%
+  G: 15.1%
+  T: 41.3%
+  none/other: 0.0%
+
+Overview of removed sequences
+length	count	expect	max.err	error counts
+3	52854	29340.7	0	52854
+4	5061	7335.2	0	5061
+5	666	1833.8	0	666
+6	137	458.4	0	137
+7	18	114.6	0	18
+8	7	28.7	0	7
+9	25	7.2	0	0 25
+10	44	1.8	1	1 43
+11	23	0.4	1	0 23
+12	4	0.1	1	0 4
+13	2	0.0	1	0 2
+
+This is cutadapt 1.15 with Python 2.7.14
+Command line parameters: -a TGCAGCTATCTCTCCG -A TGCAGCTATCTCTCCG -o /project/grice/storage/HiSeq/WGS/HiSeq_19/TrimmedFastqs/DORN1869_trimmed_R1.fastq -p /project/grice/storage/HiSeq/WGS/HiSeq_19/TrimmedFastqs/DORN1869_trimmed_R2.fastq /project/grice/storage/HiSeq/WGS/HiSeq_19/DORN1869_R1.fastq /project/grice/storage/HiSeq/WGS/HiSeq_19/DORN1869_R2.fastq
+Running on 1 core
+Trimming 2 adapters with at most 10.0% errors in paired-end mode ...
+Finished in 35.42 s (32 us/read; 1.88 M reads/minute).
+
+=== Summary ===
+
+Total read pairs processed:          1,107,086
+  Read 1 with adapter:                  57,149 (5.2%)
+  Read 2 with adapter:                  18,426 (1.7%)
+Pairs written (passing filters):     1,107,086 (100.0%)
+
+Total basepairs processed:   278,985,672 bp
+  Read 1:   139,492,836 bp
+  Read 2:   139,492,836 bp
+Total written (filtered):    278,592,543 bp (99.9%)
+  Read 1:   139,161,843 bp
+  Read 2:   139,430,700 bp
+
+=== First read: Adapter 1 ===
+
+Sequence: TGCAGCTATCTCTCCG; Type: regular 3'; Length: 16; Trimmed: 57149 times.
+
+No. of allowed errors:
+0-9 bp: 0; 10-16 bp: 1
+
+Bases preceding removed adapters:
+  A: 16.1%
+  C: 70.8%
+  G: 4.1%
+  T: 9.0%
+  none/other: 0.0%
+
+Overview of removed sequences
+length	count	expect	max.err	error counts
+3	21471	17298.2	0	21471
+4	7107	4324.6	0	7107
+5	4620	1081.1	0	4620
+6	4493	270.3	0	4493
+7	4903	67.6	0	4903
+8	4910	16.9	0	4910
+9	26	4.2	0	5 21
+10	144	1.1	1	8 136
+11	3604	0.3	1	3 3601
+12	3154	0.1	1	3 3151
+13	2711	0.0	1	0 2711
+14	6	0.0	1	0 6
+
+=== Second read: Adapter 2 ===
+
+Sequence: TGCAGCTATCTCTCCG; Type: regular 3'; Length: 16; Trimmed: 18426 times.
+
+No. of allowed errors:
+0-9 bp: 0; 10-16 bp: 1
+
+Bases preceding removed adapters:
+  A: 25.8%
+  C: 33.3%
+  G: 13.6%
+  T: 27.3%
+  none/other: 0.0%
+
+Overview of removed sequences
+length	count	expect	max.err	error counts
+3	13689	17298.2	0	13689
+4	3624	4324.6	0	3624
+5	703	1081.1	0	703
+6	204	270.3	0	204
+7	79	67.6	0	79
+8	15	16.9	0	15
+9	28	4.2	0	4 24
+10	47	1.1	1	2 45
+11	17	0.3	1	0 17
+12	8	0.1	1	0 8
+13	12	0.0	1	0 12
+
+This is cutadapt 1.15 with Python 2.7.14
+Command line parameters: -a AAGAGGCATTATGCGA -A AAGAGGCATTATGCGA -o /project/grice/storage/HiSeq/WGS/HiSeq_19/TrimmedFastqs/staphylococcus.capitis_trimmed_R1.fastq -p /project/grice/storage/HiSeq/WGS/HiSeq_19/TrimmedFastqs/staphylococcus.capitis_trimmed_R2.fastq /project/grice/storage/HiSeq/WGS/HiSeq_19/staphylococcus.capitis_R1.fastq /project/grice/storage/HiSeq/WGS/HiSeq_19/staphylococcus.capitis_R2.fastq
+Running on 1 core
+Trimming 2 adapters with at most 10.0% errors in paired-end mode ...
+Finished in 32.05 s (32 us/read; 1.85 M reads/minute).
+
+=== Summary ===
+
+Total read pairs processed:            987,231
+  Read 1 with adapter:                  45,938 (4.7%)
+  Read 2 with adapter:                  26,832 (2.7%)
+Pairs written (passing filters):       987,231 (100.0%)
+
+Total basepairs processed:   248,782,212 bp
+  Read 1:   124,391,106 bp
+  Read 2:   124,391,106 bp
+Total written (filtered):    248,469,916 bp (99.9%)
+  Read 1:   124,168,607 bp
+  Read 2:   124,301,309 bp
+
+=== First read: Adapter 1 ===
+
+Sequence: AAGAGGCATTATGCGA; Type: regular 3'; Length: 16; Trimmed: 45938 times.
+
+No. of allowed errors:
+0-9 bp: 0; 10-16 bp: 1
+
+Bases preceding removed adapters:
+  A: 20.8%
+  C: 57.3%
+  G: 11.0%
+  T: 10.9%
+  none/other: 0.0%
+
+Overview of removed sequences
+length	count	expect	max.err	error counts
+3	18650	15425.5	0	18650
+4	8981	3856.4	0	8981
+5	3849	964.1	0	3849
+6	3657	241.0	0	3657
+7	3730	60.3	0	3730
+8	3774	15.1	0	3774
+9	19	3.8	0	8 11
+10	3142	0.9	1	0 3142
+11	87	0.2	1	1 86
+12	49	0.1	1	1 48
+
+=== Second read: Adapter 2 ===
+
+Sequence: AAGAGGCATTATGCGA; Type: regular 3'; Length: 16; Trimmed: 26832 times.
+
+No. of allowed errors:
+0-9 bp: 0; 10-16 bp: 1
+
+Bases preceding removed adapters:
+  A: 35.1%
+  C: 13.6%
+  G: 19.1%
+  T: 32.1%
+  none/other: 0.0%
+
+Overview of removed sequences
+length	count	expect	max.err	error counts
+3	19484	15425.5	0	19484
+4	6265	3856.4	0	6265
+5	766	964.1	0	766
+6	153	241.0	0	153
+7	28	60.3	0	28
+8	21	15.1	0	21
+9	22	3.8	0	3 19
+10	56	0.9	1	0 56
+11	29	0.2	1	0 29
+12	8	0.1	1	0 8
+
+This is cutadapt 1.15 with Python 2.7.14
+Command line parameters: -a GGAGCTACCTCTCTAT -A GGAGCTACCTCTCTAT -o /project/grice/storage/HiSeq/WGS/HiSeq_19/TrimmedFastqs/DORN1368_trimmed_R1.fastq -p /project/grice/storage/HiSeq/WGS/HiSeq_19/TrimmedFastqs/DORN1368_trimmed_R2.fastq /project/grice/storage/HiSeq/WGS/HiSeq_19/DORN1368_R1.fastq /project/grice/storage/HiSeq/WGS/HiSeq_19/DORN1368_R2.fastq
+Running on 1 core
+Trimming 2 adapters with at most 10.0% errors in paired-end mode ...
+Finished in 34.97 s (32 us/read; 1.90 M reads/minute).
+
+=== Summary ===
+
+Total read pairs processed:          1,108,213
+  Read 1 with adapter:                  52,218 (4.7%)
+  Read 2 with adapter:                   7,131 (0.6%)
+Pairs written (passing filters):     1,108,213 (100.0%)
+
+Total basepairs processed:   279,269,676 bp
+  Read 1:   139,634,838 bp
+  Read 2:   139,634,838 bp
+Total written (filtered):    278,869,418 bp (99.9%)
+  Read 1:   139,257,522 bp
+  Read 2:   139,611,896 bp
+
+=== First read: Adapter 1 ===
+
+Sequence: GGAGCTACCTCTCTAT; Type: regular 3'; Length: 16; Trimmed: 52218 times.
+
+No. of allowed errors:
+0-9 bp: 0; 10-16 bp: 1
+
+Bases preceding removed adapters:
+  A: 3.9%
+  C: 89.1%
+  G: 1.7%
+  T: 5.4%
+  none/other: 0.0%
+WARNING:
+    The adapter is preceded by "C" extremely often.
+    The provided adapter sequence may be incomplete.
+    To fix the problem, add "C" to the beginning of the adapter sequence.
+
+Overview of removed sequences
+length	count	expect	max.err	error counts
+3	9339	17315.8	0	9339
+4	4856	4329.0	0	4856
+5	4834	1082.2	0	4834
+6	5277	270.6	0	5277
+7	5649	67.6	0	5649
+8	5606	16.9	0	5606
+9	14	4.2	0	13 1
+10	4978	1.1	1	3 4975
+11	4562	0.3	1	3 4559
+12	3708	0.1	1	1 3707
+13	3355	0.0	1	1 3354
+14	4	0.0	1	0 4
+16	1	0.0	1	0 1
+17	3	0.0	1	0 3
+19	2	0.0	1	0 2
+23	1	0.0	1	0 1
+24	1	0.0	1	0 1
+25	1	0.0	1	0 1
+26	1	0.0	1	0 1
+27	1	0.0	1	0 1
+28	2	0.0	1	0 2
+29	1	0.0	1	0 1
+30	2	0.0	1	0 2
+31	2	0.0	1	0 2
+32	1	0.0	1	0 1
+33	2	0.0	1	0 2
+38	2	0.0	1	0 2
+41	1	0.0	1	0 1
+45	1	0.0	1	0 1
+46	2	0.0	1	0 2
+54	1	0.0	1	0 1
+55	1	0.0	1	0 1
+57	1	0.0	1	0 1
+60	1	0.0	1	0 1
+61	1	0.0	1	0 1
+64	2	0.0	1	0 2
+96	1	0.0	1	0 1
+97	1	0.0	1	0 1
+
+=== Second read: Adapter 2 ===
+
+Sequence: GGAGCTACCTCTCTAT; Type: regular 3'; Length: 16; Trimmed: 7131 times.
+
+No. of allowed errors:
+0-9 bp: 0; 10-16 bp: 1
+
+Overview of removed sequences
+length	count	expect	max.err	error counts
+3	5892	17315.8	0	5892
+4	1032	4329.0	0	1032
+5	147	1082.2	0	147
+6	40	270.6	0	40
+7	9	67.6	0	9
+8	2	16.9	0	2
+9	6	4.2	0	1 5
+10	3	1.1	1	0 3
+
+WARNING:
+    One or more of your adapter sequences may be incomplete.
+    Please see the detailed output above.
+This is cutadapt 1.15 with Python 2.7.14
+Command line parameters: -a TGCAGCTAAAGGAGTA -A TGCAGCTAAAGGAGTA -o /project/grice/storage/HiSeq/WGS/HiSeq_19/TrimmedFastqs/DORN1829_trimmed_R1.fastq -p /project/grice/storage/HiSeq/WGS/HiSeq_19/TrimmedFastqs/DORN1829_trimmed_R2.fastq /project/grice/storage/HiSeq/WGS/HiSeq_19/DORN1829_R1.fastq /project/grice/storage/HiSeq/WGS/HiSeq_19/DORN1829_R2.fastq
+Running on 1 core
+Trimming 2 adapters with at most 10.0% errors in paired-end mode ...
+Finished in 41.91 s (34 us/read; 1.79 M reads/minute).
+
+=== Summary ===
+
+Total read pairs processed:          1,249,305
+  Read 1 with adapter:                  62,115 (5.0%)
+  Read 2 with adapter:                  20,442 (1.6%)
+Pairs written (passing filters):     1,249,305 (100.0%)
+
+Total basepairs processed:   314,824,860 bp
+  Read 1:   157,412,430 bp
+  Read 2:   157,412,430 bp
+Total written (filtered):    314,422,889 bp (99.9%)
+  Read 1:   157,080,144 bp
+  Read 2:   157,342,745 bp
+
+=== First read: Adapter 1 ===
+
+Sequence: TGCAGCTAAAGGAGTA; Type: regular 3'; Length: 16; Trimmed: 62115 times.
+
+No. of allowed errors:
+0-9 bp: 0; 10-16 bp: 1
+
+Bases preceding removed adapters:
+  A: 16.5%
+  C: 69.9%
+  G: 4.2%
+  T: 9.4%
+  none/other: 0.0%
+
+Overview of removed sequences
+length	count	expect	max.err	error counts
+3	23586	19520.4	0	23586
+4	7951	4880.1	0	7951
+5	4941	1220.0	0	4941
+6	4962	305.0	0	4962
+7	5193	76.3	0	5193
+8	5380	19.1	0	5380
+9	5303	4.8	0	5260 43
+10	4669	1.2	1	156 4513
+11	124	0.3	1	1 123
+12	4	0.1	1	0 4
+13	1	0.0	1	0 1
+14	1	0.0	1	0 1
+
+=== Second read: Adapter 2 ===
+
+Sequence: TGCAGCTAAAGGAGTA; Type: regular 3'; Length: 16; Trimmed: 20442 times.
+
+No. of allowed errors:
+0-9 bp: 0; 10-16 bp: 1
+
+Bases preceding removed adapters:
+  A: 25.5%
+  C: 33.3%
+  G: 12.8%
+  T: 28.4%
+  none/other: 0.0%
+
+Overview of removed sequences
+length	count	expect	max.err	error counts
+3	14956	19520.4	0	14956
+4	4171	4880.1	0	4171
+5	772	1220.0	0	772
+6	222	305.0	0	222
+7	101	76.3	0	101
+8	14	19.1	0	14
+9	43	4.8	0	11 32
+10	115	1.2	1	10 105
+11	36	0.3	1	0 36
+12	7	0.1	1	0 7
+13	4	0.0	1	0 4
+53	1	0.0	1	0 1
+
+This is cutadapt 1.15 with Python 2.7.14
+Command line parameters: -a ATCTCAGGTTATGCGA -A ATCTCAGGTTATGCGA -o /project/grice/storage/HiSeq/WGS/HiSeq_19/TrimmedFastqs/no..id.inhibitor_trimmed_R1.fastq -p /project/grice/storage/HiSeq/WGS/HiSeq_19/TrimmedFastqs/no..id.inhibitor_trimmed_R2.fastq /project/grice/storage/HiSeq/WGS/HiSeq_19/no..id.inhibitor_R1.fastq /project/grice/storage/HiSeq/WGS/HiSeq_19/no..id.inhibitor_R2.fastq
+Running on 1 core
+Trimming 2 adapters with at most 10.0% errors in paired-end mode ...
+Finished in 30.10 s (34 us/read; 1.75 M reads/minute).
+
+=== Summary ===
+
+Total read pairs processed:            877,120
+  Read 1 with adapter:                  55,418 (6.3%)
+  Read 2 with adapter:                  34,676 (4.0%)
+Pairs written (passing filters):       877,120 (100.0%)
+
+Total basepairs processed:   221,034,240 bp
+  Read 1:   110,517,120 bp
+  Read 2:   110,517,120 bp
+Total written (filtered):    220,640,517 bp (99.8%)
+  Read 1:   110,246,267 bp
+  Read 2:   110,394,250 bp
+
+=== First read: Adapter 1 ===
+
+Sequence: ATCTCAGGTTATGCGA; Type: regular 3'; Length: 16; Trimmed: 55418 times.
+
+No. of allowed errors:
+0-9 bp: 0; 10-16 bp: 1
+
+Bases preceding removed adapters:
+  A: 4.9%
+  C: 72.9%
+  G: 17.7%
+  T: 4.4%
+  none/other: 0.0%
+
+Overview of removed sequences
+length	count	expect	max.err	error counts
+3	17978	13705.0	0	17978
+4	11534	3426.2	0	11534
+5	10639	856.6	0	10639
+6	3729	214.1	0	3729
+7	4068	53.5	0	4068
+8	4005	13.4	0	4005
+9	15	3.3	0	4 11
+10	3407	0.8	1	0 3407
+11	23	0.2	1	0 23
+12	20	0.1	1	0 20
+
+=== Second read: Adapter 2 ===
+
+Sequence: ATCTCAGGTTATGCGA; Type: regular 3'; Length: 16; Trimmed: 34676 times.
+
+No. of allowed errors:
+0-9 bp: 0; 10-16 bp: 1
+
+Bases preceding removed adapters:
+  A: 8.3%
+  C: 34.6%
+  G: 44.2%
+  T: 12.8%
+  none/other: 0.0%
+
+Overview of removed sequences
+length	count	expect	max.err	error counts
+3	20680	13705.0	0	20680
+4	9679	3426.2	0	9679
+5	4039	856.6	0	4039
+6	163	214.1	0	163
+7	54	53.5	0	54
+8	15	13.4	0	15
+9	24	3.3	0	1 23
+10	17	0.8	1	0 17
+11	3	0.2	1	0 3
+12	2	0.1	1	0 2
+
+This is cutadapt 1.15 with Python 2.7.14
+Command line parameters: -a TCCTGAGCGTAAGGAG -A TCCTGAGCGTAAGGAG -o /project/grice/storage/HiSeq/WGS/HiSeq_19/TrimmedFastqs/DORN434_trimmed_R1.fastq -p /project/grice/storage/HiSeq/WGS/HiSeq_19/TrimmedFastqs/DORN434_trimmed_R2.fastq /project/grice/storage/HiSeq/WGS/HiSeq_19/DORN434_R1.fastq /project/grice/storage/HiSeq/WGS/HiSeq_19/DORN434_R2.fastq
+Running on 1 core
+Trimming 2 adapters with at most 10.0% errors in paired-end mode ...
+Finished in 44.32 s (33 us/read; 1.84 M reads/minute).
+
+=== Summary ===
+
+Total read pairs processed:          1,361,833
+  Read 1 with adapter:                  49,038 (3.6%)
+  Read 2 with adapter:                  19,411 (1.4%)
+Pairs written (passing filters):     1,361,833 (100.0%)
+
+Total basepairs processed:   343,181,916 bp
+  Read 1:   171,590,958 bp
+  Read 2:   171,590,958 bp
+Total written (filtered):    342,856,364 bp (99.9%)
+  Read 1:   171,332,734 bp
+  Read 2:   171,523,630 bp
+
+=== First read: Adapter 1 ===
+
+Sequence: TCCTGAGCGTAAGGAG; Type: regular 3'; Length: 16; Trimmed: 49038 times.
+
+No. of allowed errors:
+0-9 bp: 0; 10-16 bp: 1
+
+Bases preceding removed adapters:
+  A: 8.6%
+  C: 80.2%
+  G: 3.4%
+  T: 7.8%
+  none/other: 0.0%
+WARNING:
+    The adapter is preceded by "C" extremely often.
+    The provided adapter sequence may be incomplete.
+    To fix the problem, add "C" to the beginning of the adapter sequence.
+
+Overview of removed sequences
+length	count	expect	max.err	error counts
+3	17268	21278.6	0	17268
+4	6552	5319.7	0	6552
+5	5124	1329.9	0	5124
+6	4971	332.5	0	4971
+7	5215	83.1	0	5215
+8	5421	20.8	0	5421
+9	11	5.2	0	2 9
+10	4443	1.3	1	0 4443
+11	32	0.3	1	0 32
+12	1	0.1	1	0 1
+
+=== Second read: Adapter 2 ===
+
+Sequence: TCCTGAGCGTAAGGAG; Type: regular 3'; Length: 16; Trimmed: 19411 times.
+
+No. of allowed errors:
+0-9 bp: 0; 10-16 bp: 1
+
+Overview of removed sequences
+length	count	expect	max.err	error counts
+3	11779	21278.6	0	11779
+4	6522	5319.7	0	6522
+5	905	1329.9	0	905
+6	151	332.5	0	151
+7	17	83.1	0	17
+8	6	20.8	0	6
+9	14	5.2	0	0 14
+10	9	1.3	1	0 9
+11	7	0.3	1	0 7
+12	1	0.1	1	0 1
+
+WARNING:
+    One or more of your adapter sequences may be incomplete.
+    Please see the detailed output above.
+This is cutadapt 1.15 with Python 2.7.14
+Command line parameters: -a TAAGGCGAAAGGCTAT -A TAAGGCGAAAGGCTAT -o /project/grice/storage/HiSeq/WGS/HiSeq_19/TrimmedFastqs/DORN1946_trimmed_R1.fastq -p /project/grice/storage/HiSeq/WGS/HiSeq_19/TrimmedFastqs/DORN1946_trimmed_R2.fastq /project/grice/storage/HiSeq/WGS/HiSeq_19/DORN1946_R1.fastq /project/grice/storage/HiSeq/WGS/HiSeq_19/DORN1946_R2.fastq
+Running on 1 core
+Trimming 2 adapters with at most 10.0% errors in paired-end mode ...
+Finished in 57.62 s (34 us/read; 1.74 M reads/minute).
+
+=== Summary ===
+
+Total read pairs processed:          1,672,640
+  Read 1 with adapter:                  93,351 (5.6%)
+  Read 2 with adapter:                  55,696 (3.3%)
+Pairs written (passing filters):     1,672,640 (100.0%)
+
+Total basepairs processed:   421,505,280 bp
+  Read 1:   210,752,640 bp
+  Read 2:   210,752,640 bp
+Total written (filtered):    420,886,662 bp (99.9%)
+  Read 1:   210,308,304 bp
+  Read 2:   210,578,358 bp
+
+=== First read: Adapter 1 ===
+
+Sequence: TAAGGCGAAAGGCTAT; Type: regular 3'; Length: 16; Trimmed: 93351 times.
+
+No. of allowed errors:
+0-9 bp: 0; 10-16 bp: 1
+
+Bases preceding removed adapters:
+  A: 18.7%
+  C: 52.9%
+  G: 8.6%
+  T: 19.9%
+  none/other: 0.0%
+
+Overview of removed sequences
+length	count	expect	max.err	error counts
+3	50066	26135.0	0	50066
+4	9014	6533.8	0	9014
+5	5476	1633.4	0	5476
+6	5590	408.4	0	5590
+7	5767	102.1	0	5767
+8	5962	25.5	0	5962
+9	5848	6.4	0	5832 16
+10	5448	1.6	1	297 5151
+11	178	0.4	1	0 178
+13	1	0.0	1	0 1
+14	1	0.0	1	0 1
+
+=== Second read: Adapter 2 ===
+
+Sequence: TAAGGCGAAAGGCTAT; Type: regular 3'; Length: 16; Trimmed: 55696 times.
+
+No. of allowed errors:
+0-9 bp: 0; 10-16 bp: 1
+
+Bases preceding removed adapters:
+  A: 31.2%
+  C: 14.3%
+  G: 14.8%
+  T: 39.7%
+  none/other: 0.0%
+
+Overview of removed sequences
+length	count	expect	max.err	error counts
+3	50009	26135.0	0	50009
+4	4779	6533.8	0	4779
+5	675	1633.4	0	675
+6	131	408.4	0	131
+7	15	102.1	0	15
+8	5	25.5	0	5
+9	15	6.4	0	1 14
+10	39	1.6	1	1 38
+11	28	0.4	1	0 28
+
+This is cutadapt 1.15 with Python 2.7.14
+Command line parameters: -a CGGAGCCTCGTCTAAT -A CGGAGCCTCGTCTAAT -o /project/grice/storage/HiSeq/WGS/HiSeq_19/TrimmedFastqs/DORN1520_trimmed_R1.fastq -p /project/grice/storage/HiSeq/WGS/HiSeq_19/TrimmedFastqs/DORN1520_trimmed_R2.fastq /project/grice/storage/HiSeq/WGS/HiSeq_19/DORN1520_R1.fastq /project/grice/storage/HiSeq/WGS/HiSeq_19/DORN1520_R2.fastq
+Running on 1 core
+Trimming 2 adapters with at most 10.0% errors in paired-end mode ...
+Finished in 46.90 s (32 us/read; 1.89 M reads/minute).
+
+=== Summary ===
+
+Total read pairs processed:          1,476,297
+  Read 1 with adapter:                  53,052 (3.6%)
+  Read 2 with adapter:                  21,961 (1.5%)
+Pairs written (passing filters):     1,476,297 (100.0%)
+
+Total basepairs processed:   372,026,844 bp
+  Read 1:   186,013,422 bp
+  Read 2:   186,013,422 bp
+Total written (filtered):    371,662,629 bp (99.9%)
+  Read 1:   185,716,456 bp
+  Read 2:   185,946,173 bp
+
+=== First read: Adapter 1 ===
+
+Sequence: CGGAGCCTCGTCTAAT; Type: regular 3'; Length: 16; Trimmed: 53052 times.
+
+No. of allowed errors:
+0-9 bp: 0; 10-16 bp: 1
+
+Bases preceding removed adapters:
+  A: 2.6%
+  C: 93.6%
+  G: 1.6%
+  T: 2.2%
+  none/other: 0.0%
+WARNING:
+    The adapter is preceded by "C" extremely often.
+    The provided adapter sequence may be incomplete.
+    To fix the problem, add "C" to the beginning of the adapter sequence.
+
+Overview of removed sequences
+length	count	expect	max.err	error counts
+3	9207	23067.1	0	9207
+4	7612	5766.8	0	7612
+5	7910	1441.7	0	7910
+6	8932	360.4	0	8932
+7	9571	90.1	0	9571
+8	9725	22.5	0	9725
+9	24	5.6	0	20 4
+10	50	1.4	1	1 49
+11	12	0.4	1	0 12
+12	7	0.1	1	0 7
+13	2	0.0	1	0 2
+
+=== Second read: Adapter 2 ===
+
+Sequence: CGGAGCCTCGTCTAAT; Type: regular 3'; Length: 16; Trimmed: 21961 times.
+
+No. of allowed errors:
+0-9 bp: 0; 10-16 bp: 1
+
+Overview of removed sequences
+length	count	expect	max.err	error counts
+3	20865	23067.1	0	20865
+4	895	5766.8	0	895
+5	171	1441.7	0	171
+6	20	360.4	0	20
+7	4	90.1	0	4
+8	3	22.5	0	3
+11	2	0.4	1	0 2
+25	1	0.0	1	0 1
+
+WARNING:
+    One or more of your adapter sequences may be incomplete.
+    Please see the detailed output above.
+This is cutadapt 1.15 with Python 2.7.14
+Command line parameters: -a CGATCAGTTCGACTAG -A CGATCAGTTCGACTAG -o /project/grice/storage/HiSeq/WGS/HiSeq_19/TrimmedFastqs/trichosporin.p6t4_trimmed_R1.fastq -p /project/grice/storage/HiSeq/WGS/HiSeq_19/TrimmedFastqs/trichosporin.p6t4_trimmed_R2.fastq /project/grice/storage/HiSeq/WGS/HiSeq_19/trichosporin.p6t4_R1.fastq /project/grice/storage/HiSeq/WGS/HiSeq_19/trichosporin.p6t4_R2.fastq
+Running on 1 core
+Trimming 2 adapters with at most 10.0% errors in paired-end mode ...
+Finished in 49.93 s (33 us/read; 1.84 M reads/minute).
+
+=== Summary ===
+
+Total read pairs processed:          1,530,740
+  Read 1 with adapter:                  63,209 (4.1%)
+  Read 2 with adapter:                  40,177 (2.6%)
+Pairs written (passing filters):     1,530,740 (100.0%)
+
+Total basepairs processed:   385,746,480 bp
+  Read 1:   192,873,240 bp
+  Read 2:   192,873,240 bp
+Total written (filtered):    385,327,262 bp (99.9%)
+  Read 1:   192,583,566 bp
+  Read 2:   192,743,696 bp
+
+=== First read: Adapter 1 ===
+
+Sequence: CGATCAGTTCGACTAG; Type: regular 3'; Length: 16; Trimmed: 63209 times.
+
+No. of allowed errors:
+0-9 bp: 0; 10-16 bp: 1
+
+Bases preceding removed adapters:
+  A: 17.8%
+  C: 59.2%
+  G: 10.4%
+  T: 12.7%
+  none/other: 0.0%
+
+Overview of removed sequences
+length	count	expect	max.err	error counts
+3	33779	23917.8	0	33779
+4	7577	5979.5	0	7577
+5	4914	1494.9	0	4914
+6	4288	373.7	0	4288
+7	4427	93.4	0	4427
+8	4506	23.4	0	4506
+9	25	5.8	0	7 18
+10	160	1.5	1	0 160
+11	3529	0.4	1	0 3529
+12	2	0.1	1	0 2
+13	2	0.0	1	0 2
+
+=== Second read: Adapter 2 ===
+
+Sequence: CGATCAGTTCGACTAG; Type: regular 3'; Length: 16; Trimmed: 40177 times.
+
+No. of allowed errors:
+0-9 bp: 0; 10-16 bp: 1
+
+Bases preceding removed adapters:
+  A: 27.7%
+  C: 25.6%
+  G: 16.2%
+  T: 30.5%
+  none/other: 0.0%
+
+Overview of removed sequences
+length	count	expect	max.err	error counts
+3	34349	23917.8	0	34349
+4	4064	5979.5	0	4064
+5	1232	1494.9	0	1232
+6	259	373.7	0	259
+7	87	93.4	0	87
+8	19	23.4	0	19
+9	23	5.8	0	1 22
+10	31	1.5	1	0 31
+11	110	0.4	1	0 110
+12	1	0.1	1	0 1
+13	1	0.0	1	0 1
+14	1	0.0	1	0 1
+
+This is cutadapt 1.15 with Python 2.7.14
+Command line parameters: -a CGATCAGTCGTCTAAT -A CGATCAGTCGTCTAAT -o /project/grice/storage/HiSeq/WGS/HiSeq_19/TrimmedFastqs/DORN1743_trimmed_R1.fastq -p /project/grice/storage/HiSeq/WGS/HiSeq_19/TrimmedFastqs/DORN1743_trimmed_R2.fastq /project/grice/storage/HiSeq/WGS/HiSeq_19/DORN1743_R1.fastq /project/grice/storage/HiSeq/WGS/HiSeq_19/DORN1743_R2.fastq
+Running on 1 core
+Trimming 2 adapters with at most 10.0% errors in paired-end mode ...
+Finished in 44.37 s (33 us/read; 1.84 M reads/minute).
+
+=== Summary ===
+
+Total read pairs processed:          1,360,661
+  Read 1 with adapter:                  57,296 (4.2%)
+  Read 2 with adapter:                  24,214 (1.8%)
+Pairs written (passing filters):     1,360,661 (100.0%)
+
+Total basepairs processed:   342,886,572 bp
+  Read 1:   171,443,286 bp
+  Read 2:   171,443,286 bp
+Total written (filtered):    342,546,082 bp (99.9%)
+  Read 1:   171,179,262 bp
+  Read 2:   171,366,820 bp
+
+=== First read: Adapter 1 ===
+
+Sequence: CGATCAGTCGTCTAAT; Type: regular 3'; Length: 16; Trimmed: 57296 times.
+
+No. of allowed errors:
+0-9 bp: 0; 10-16 bp: 1
+
+Bases preceding removed adapters:
+  A: 19.4%
+  C: 70.9%
+  G: 4.0%
+  T: 5.6%
+  none/other: 0.0%
+
+Overview of removed sequences
+length	count	expect	max.err	error counts
+3	26172	21260.3	0	26172
+4	7324	5315.1	0	7324
+5	5477	1328.8	0	5477
+6	5836	332.2	0	5836
+7	6193	83.0	0	6193
+8	6242	20.8	0	6242
+9	13	5.2	0	3 10
+10	24	1.3	1	0 24
+11	13	0.3	1	0 13
+12	2	0.1	1	0 2
+
+=== Second read: Adapter 2 ===
+
+Sequence: CGATCAGTCGTCTAAT; Type: regular 3'; Length: 16; Trimmed: 24214 times.
+
+No. of allowed errors:
+0-9 bp: 0; 10-16 bp: 1
+
+Bases preceding removed adapters:
+  A: 45.0%
+  C: 32.3%
+  G: 9.6%
+  T: 13.2%
+  none/other: 0.0%
+
+Overview of removed sequences
+length	count	expect	max.err	error counts
+3	20945	21260.3	0	20945
+4	2897	5315.1	0	2897
+5	254	1328.8	0	254
+6	89	332.2	0	89
+7	13	83.0	0	13
+8	4	20.8	0	4
+9	8	5.2	0	1 7
+10	1	1.3	1	0 1
+11	2	0.3	1	0 2
+12	1	0.1	1	0 1
+
+This is cutadapt 1.15 with Python 2.7.14
+Command line parameters: -a GGAGCTACTCTCTCCG -A GGAGCTACTCTCTCCG -o /project/grice/storage/HiSeq/WGS/HiSeq_19/TrimmedFastqs/DORN1447_trimmed_R1.fastq -p /project/grice/storage/HiSeq/WGS/HiSeq_19/TrimmedFastqs/DORN1447_trimmed_R2.fastq /project/grice/storage/HiSeq/WGS/HiSeq_19/DORN1447_R1.fastq /project/grice/storage/HiSeq/WGS/HiSeq_19/DORN1447_R2.fastq
+Running on 1 core
+Trimming 2 adapters with at most 10.0% errors in paired-end mode ...
+Finished in 35.25 s (31 us/read; 1.95 M reads/minute).
+
+=== Summary ===
+
+Total read pairs processed:          1,145,799
+  Read 1 with adapter:                  46,336 (4.0%)
+  Read 2 with adapter:                  15,233 (1.3%)
+Pairs written (passing filters):     1,145,799 (100.0%)
+
+Total basepairs processed:   288,741,348 bp
+  Read 1:   144,370,674 bp
+  Read 2:   144,370,674 bp
+Total written (filtered):    288,370,600 bp (99.9%)
+  Read 1:   144,051,427 bp
+  Read 2:   144,319,173 bp
+
+=== First read: Adapter 1 ===
+
+Sequence: GGAGCTACTCTCTCCG; Type: regular 3'; Length: 16; Trimmed: 46336 times.
+
+No. of allowed errors:
+0-9 bp: 0; 10-16 bp: 1
+
+Bases preceding removed adapters:
+  A: 4.7%
+  C: 87.0%
+  G: 2.1%
+  T: 6.3%
+  none/other: 0.0%
+WARNING:
+    The adapter is preceded by "C" extremely often.
+    The provided adapter sequence may be incomplete.
+    To fix the problem, add "C" to the beginning of the adapter sequence.
+
+Overview of removed sequences
+length	count	expect	max.err	error counts
+3	9458	17903.1	0	9458
+4	4826	4475.8	0	4826
+5	4606	1118.9	0	4606
+6	4970	279.7	0	4970
+7	5434	69.9	0	5434
+8	5606	17.5	0	5606
+9	18	4.4	0	5 13
+10	149	1.1	1	0 149
+11	4325	0.3	1	0 4325
+12	3668	0.1	1	0 3668
+13	3274	0.0	1	0 3274
+14	2	0.0	1	0 2
+
+=== Second read: Adapter 2 ===
+
+Sequence: GGAGCTACTCTCTCCG; Type: regular 3'; Length: 16; Trimmed: 15233 times.
+
+No. of allowed errors:
+0-9 bp: 0; 10-16 bp: 1
+
+Overview of removed sequences
+length	count	expect	max.err	error counts
+3	9853	17903.1	0	9853
+4	5114	4475.8	0	5114
+5	180	1118.9	0	180
+6	53	279.7	0	53
+7	20	69.9	0	20
+8	1	17.5	0	1
+9	3	4.4	0	3
+10	6	1.1	1	0 6
+11	3	0.3	1	0 3
+
+WARNING:
+    One or more of your adapter sequences may be incomplete.
+    Please see the detailed output above.
+This is cutadapt 1.15 with Python 2.7.14
+Command line parameters: -a ATCTCAGGTATCCTCT -A ATCTCAGGTATCCTCT -o /project/grice/storage/HiSeq/WGS/HiSeq_19/TrimmedFastqs/DORN1258_trimmed_R1.fastq -p /project/grice/storage/HiSeq/WGS/HiSeq_19/TrimmedFastqs/DORN1258_trimmed_R2.fastq /project/grice/storage/HiSeq/WGS/HiSeq_19/DORN1258_R1.fastq /project/grice/storage/HiSeq/WGS/HiSeq_19/DORN1258_R2.fastq
+Running on 1 core
+Trimming 2 adapters with at most 10.0% errors in paired-end mode ...
+Finished in 46.84 s (34 us/read; 1.75 M reads/minute).
+
+=== Summary ===
+
+Total read pairs processed:          1,367,983
+  Read 1 with adapter:                  84,873 (6.2%)
+  Read 2 with adapter:                  49,859 (3.6%)
+Pairs written (passing filters):     1,367,983 (100.0%)
+
+Total basepairs processed:   344,731,716 bp
+  Read 1:   172,365,858 bp
+  Read 2:   172,365,858 bp
+Total written (filtered):    344,116,740 bp (99.8%)
+  Read 1:   171,926,395 bp
+  Read 2:   172,190,345 bp
+
+=== First read: Adapter 1 ===
+
+Sequence: ATCTCAGGTATCCTCT; Type: regular 3'; Length: 16; Trimmed: 84873 times.
+
+No. of allowed errors:
+0-9 bp: 0; 10-16 bp: 1
+
+Bases preceding removed adapters:
+  A: 11.2%
+  C: 68.6%
+  G: 9.8%
+  T: 10.4%
+  none/other: 0.0%
+
+Overview of removed sequences
+length	count	expect	max.err	error counts
+3	27936	21374.7	0	27936
+4	18049	5343.7	0	18049
+5	12668	1335.9	0	12668
+6	4473	334.0	0	4473
+7	4664	83.5	0	4664
+8	4716	20.9	0	4716
+9	4605	5.2	0	1 4604
+10	4082	1.3	1	0 4082
+11	3566	0.3	1	0 3566
+12	68	0.1	1	0 68
+13	46	0.0	1	0 46
+
+=== Second read: Adapter 2 ===
+
+Sequence: ATCTCAGGTATCCTCT; Type: regular 3'; Length: 16; Trimmed: 49859 times.
+
+No. of allowed errors:
+0-9 bp: 0; 10-16 bp: 1
+
+Bases preceding removed adapters:
+  A: 19.0%
+  C: 32.7%
+  G: 26.6%
+  T: 21.6%
+  none/other: 0.0%
+
+Overview of removed sequences
+length	count	expect	max.err	error counts
+3	29477	21374.7	0	29477
+4	15488	5343.7	0	15488
+5	4596	1335.9	0	4596
+6	190	334.0	0	190
+7	27	83.5	0	27
+8	4	20.9	0	4
+9	22	5.2	0	1 21
+10	25	1.3	1	0 25
+11	20	0.3	1	0 20
+12	9	0.1	1	0 9
+13	1	0.0	1	0 1
+
+This is cutadapt 1.15 with Python 2.7.14
+Command line parameters: -a GGACTCCTCTCTCTAT -A GGACTCCTCTCTCTAT -o /project/grice/storage/HiSeq/WGS/HiSeq_19/TrimmedFastqs/DORN489_trimmed_R1.fastq -p /project/grice/storage/HiSeq/WGS/HiSeq_19/TrimmedFastqs/DORN489_trimmed_R2.fastq /project/grice/storage/HiSeq/WGS/HiSeq_19/DORN489_R1.fastq /project/grice/storage/HiSeq/WGS/HiSeq_19/DORN489_R2.fastq
+Running on 1 core
+Trimming 2 adapters with at most 10.0% errors in paired-end mode ...
+Finished in 40.77 s (32 us/read; 1.86 M reads/minute).
+
+=== Summary ===
+
+Total read pairs processed:          1,266,506
+  Read 1 with adapter:                  50,770 (4.0%)
+  Read 2 with adapter:                   8,707 (0.7%)
+Pairs written (passing filters):     1,266,506 (100.0%)
+
+Total basepairs processed:   319,159,512 bp
+  Read 1:   159,579,756 bp
+  Read 2:   159,579,756 bp
+Total written (filtered):    318,772,232 bp (99.9%)
+  Read 1:   159,220,316 bp
+  Read 2:   159,551,916 bp
+
+=== First read: Adapter 1 ===
+
+Sequence: GGACTCCTCTCTCTAT; Type: regular 3'; Length: 16; Trimmed: 50770 times.
+
+No. of allowed errors:
+0-9 bp: 0; 10-16 bp: 1
+
+Bases preceding removed adapters:
+  A: 4.9%
+  C: 86.0%
+  G: 2.3%
+  T: 6.8%
+  none/other: 0.0%
+WARNING:
+    The adapter is preceded by "C" extremely often.
+    The provided adapter sequence may be incomplete.
+    To fix the problem, add "C" to the beginning of the adapter sequence.
+
+Overview of removed sequences
+length	count	expect	max.err	error counts
+3	10281	19789.2	0	10281
+4	4828	4947.3	0	4828
+5	4584	1236.8	0	4584
+6	4908	309.2	0	4908
+7	5308	77.3	0	5308
+8	5454	19.3	0	5454
+9	19	4.8	0	3 16
+10	4676	1.2	1	4 4672
+11	3997	0.3	1	4 3993
+12	3579	0.1	1	1 3578
+13	3065	0.0	1	4 3061
+14	4	0.0	1	0 4
+15	1	0.0	1	0 1
+16	1	0.0	1	0 1
+17	2	0.0	1	0 2
+18	1	0.0	1	0 1
+19	1	0.0	1	0 1
+20	1	0.0	1	0 1
+21	2	0.0	1	0 2
+22	3	0.0	1	0 3
+23	4	0.0	1	0 4
+25	1	0.0	1	0 1
+26	4	0.0	1	0 4
+27	1	0.0	1	0 1
+28	3	0.0	1	0 3
+29	2	0.0	1	0 2
+30	4	0.0	1	0 4
+31	4	0.0	1	0 4
+33	1	0.0	1	0 1
+34	2	0.0	1	0 2
+35	1	0.0	1	0 1
+36	1	0.0	1	0 1
+38	2	0.0	1	0 2
+39	1	0.0	1	0 1
+40	2	0.0	1	0 2
+42	1	0.0	1	0 1
+43	2	0.0	1	0 2
+46	2	0.0	1	0 2
+47	3	0.0	1	0 3
+48	1	0.0	1	0 1
+49	2	0.0	1	0 2
+50	1	0.0	1	0 1
+52	1	0.0	1	0 1
+57	1	0.0	1	0 1
+58	1	0.0	1	0 1
+59	4	0.0	1	0 4
+63	1	0.0	1	0 1
+64	2	0.0	1	0 2
+
+=== Second read: Adapter 2 ===
+
+Sequence: GGACTCCTCTCTCTAT; Type: regular 3'; Length: 16; Trimmed: 8707 times.
+
+No. of allowed errors:
+0-9 bp: 0; 10-16 bp: 1
+
+Overview of removed sequences
+length	count	expect	max.err	error counts
+3	7377	19789.2	0	7377
+4	1011	4947.3	0	1011
+5	281	1236.8	0	281
+6	31	309.2	0	31
+8	1	19.3	0	1
+10	4	1.2	1	0 4
+12	1	0.1	1	0 1
+14	1	0.0	1	0 1
+
+WARNING:
+    One or more of your adapter sequences may be incomplete.
+    Please see the detailed output above.
+This is cutadapt 1.15 with Python 2.7.14
+Command line parameters: -a CGATCAGTGTAAGGAG -A CGATCAGTGTAAGGAG -o /project/grice/storage/HiSeq/WGS/HiSeq_19/TrimmedFastqs/DORN1755_trimmed_R1.fastq -p /project/grice/storage/HiSeq/WGS/HiSeq_19/TrimmedFastqs/DORN1755_trimmed_R2.fastq /project/grice/storage/HiSeq/WGS/HiSeq_19/DORN1755_R1.fastq /project/grice/storage/HiSeq/WGS/HiSeq_19/DORN1755_R2.fastq
+Running on 1 core
+Trimming 2 adapters with at most 10.0% errors in paired-end mode ...
+Finished in 35.42 s (32 us/read; 1.87 M reads/minute).
+
+=== Summary ===
+
+Total read pairs processed:          1,101,554
+  Read 1 with adapter:                  45,537 (4.1%)
+  Read 2 with adapter:                  18,510 (1.7%)
+Pairs written (passing filters):     1,101,554 (100.0%)
+
+Total basepairs processed:   277,591,608 bp
+  Read 1:   138,795,804 bp
+  Read 2:   138,795,804 bp
+Total written (filtered):    277,305,143 bp (99.9%)
+  Read 1:   138,568,315 bp
+  Read 2:   138,736,828 bp
+
+=== First read: Adapter 1 ===
+
+Sequence: CGATCAGTGTAAGGAG; Type: regular 3'; Length: 16; Trimmed: 45537 times.
+
+No. of allowed errors:
+0-9 bp: 0; 10-16 bp: 1
+
+Bases preceding removed adapters:
+  A: 18.8%
+  C: 70.9%
+  G: 4.2%
+  T: 6.0%
+  none/other: 0.0%
+
+Overview of removed sequences
+length	count	expect	max.err	error counts
+3	19525	17211.8	0	19525
+4	5676	4302.9	0	5676
+5	3896	1075.7	0	3896
+6	4057	268.9	0	4057
+7	4286	67.2	0	4286
+8	4297	16.8	0	4297
+9	20	4.2	0	4 16
+10	3752	1.1	1	1 3751
+11	27	0.3	1	0 27
+13	1	0.0	1	0 1
+
+=== Second read: Adapter 2 ===
+
+Sequence: CGATCAGTGTAAGGAG; Type: regular 3'; Length: 16; Trimmed: 18510 times.
+
+No. of allowed errors:
+0-9 bp: 0; 10-16 bp: 1
+
+Bases preceding removed adapters:
+  A: 43.6%
+  C: 30.5%
+  G: 10.8%
+  T: 15.1%
+  none/other: 0.0%
+
+Overview of removed sequences
+length	count	expect	max.err	error counts
+3	15655	17211.8	0	15655
+4	2508	4302.9	0	2508
+5	215	1075.7	0	215
+6	89	268.9	0	89
+7	15	67.2	0	15
+8	4	16.8	0	4
+9	12	4.2	0	1 11
+10	7	1.1	1	0 7
+11	5	0.3	1	0 5
+
+This is cutadapt 1.15 with Python 2.7.14
+Command line parameters: -a AAGAGGCACCTAGAGT -A AAGAGGCACCTAGAGT -o /project/grice/storage/HiSeq/WGS/HiSeq_19/TrimmedFastqs/EBneg5_trimmed_R1.fastq -p /project/grice/storage/HiSeq/WGS/HiSeq_19/TrimmedFastqs/EBneg5_trimmed_R2.fastq /project/grice/storage/HiSeq/WGS/HiSeq_19/EBneg5_R1.fastq /project/grice/storage/HiSeq/WGS/HiSeq_19/EBneg5_R2.fastq
+Running on 1 core
+Trimming 2 adapters with at most 10.0% errors in paired-end mode ...
+Finished in 0.03 s (46 us/read; 1.31 M reads/minute).
+
+=== Summary ===
+
+Total read pairs processed:                672
+  Read 1 with adapter:                      15 (2.2%)
+  Read 2 with adapter:                      11 (1.6%)
+Pairs written (passing filters):           672 (100.0%)
+
+Total basepairs processed:       169,344 bp
+  Read 1:        84,672 bp
+  Read 2:        84,672 bp
+Total written (filtered):        169,243 bp (99.9%)
+  Read 1:        84,609 bp
+  Read 2:        84,634 bp
+
+=== First read: Adapter 1 ===
+
+Sequence: AAGAGGCACCTAGAGT; Type: regular 3'; Length: 16; Trimmed: 15 times.
+
+No. of allowed errors:
+0-9 bp: 0; 10-16 bp: 1
+
+Bases preceding removed adapters:
+  A: 20.0%
+  C: 40.0%
+  G: 20.0%
+  T: 20.0%
+  none/other: 0.0%
+
+Overview of removed sequences
+length	count	expect	max.err	error counts
+3	7	10.5	0	7
+4	2	2.6	0	2
+5	3	0.7	0	3
+6	2	0.2	0	2
+7	1	0.0	0	1
+
+=== Second read: Adapter 2 ===
+
+Sequence: AAGAGGCACCTAGAGT; Type: regular 3'; Length: 16; Trimmed: 11 times.
+
+No. of allowed errors:
+0-9 bp: 0; 10-16 bp: 1
+
+Bases preceding removed adapters:
+  A: 45.5%
+  C: 18.2%
+  G: 18.2%
+  T: 18.2%
+  none/other: 0.0%
+
+Overview of removed sequences
+length	count	expect	max.err	error counts
+3	7	10.5	0	7
+4	3	2.6	0	3
+5	1	0.7	0	1
+
+This is cutadapt 1.15 with Python 2.7.14
+Command line parameters: -a TAGGCATGAAGGAGTA -A TAGGCATGAAGGAGTA -o /project/grice/storage/HiSeq/WGS/HiSeq_19/TrimmedFastqs/DORN575_trimmed_R1.fastq -p /project/grice/storage/HiSeq/WGS/HiSeq_19/TrimmedFastqs/DORN575_trimmed_R2.fastq /project/grice/storage/HiSeq/WGS/HiSeq_19/DORN575_R1.fastq /project/grice/storage/HiSeq/WGS/HiSeq_19/DORN575_R2.fastq
+Running on 1 core
+Trimming 2 adapters with at most 10.0% errors in paired-end mode ...
+Finished in 38.35 s (34 us/read; 1.78 M reads/minute).
+
+=== Summary ===
+
+Total read pairs processed:          1,139,624
+  Read 1 with adapter:                  44,823 (3.9%)
+  Read 2 with adapter:                  16,033 (1.4%)
+Pairs written (passing filters):     1,139,624 (100.0%)
+
+Total basepairs processed:   287,185,248 bp
+  Read 1:   143,592,624 bp
+  Read 2:   143,592,624 bp
+Total written (filtered):    286,878,206 bp (99.9%)
+  Read 1:   143,336,982 bp
+  Read 2:   143,541,224 bp
+
+=== First read: Adapter 1 ===
+
+Sequence: TAGGCATGAAGGAGTA; Type: regular 3'; Length: 16; Trimmed: 44823 times.
+
+No. of allowed errors:
+0-9 bp: 0; 10-16 bp: 1
+
+Bases preceding removed adapters:
+  A: 9.6%
+  C: 73.6%
+  G: 5.1%
+  T: 11.7%
+  none/other: 0.0%
+
+Overview of removed sequences
+length	count	expect	max.err	error counts
+3	14168	17806.6	0	14168
+4	5000	4451.7	0	5000
+5	3966	1112.9	0	3966
+6	4188	278.2	0	4188
+7	4462	69.6	0	4462
+8	4653	17.4	0	4653
+9	4235	4.3	0	4222 13
+10	4054	1.1	1	102 3952
+11	97	0.3	1	0 97
+
+=== Second read: Adapter 2 ===
+
+Sequence: TAGGCATGAAGGAGTA; Type: regular 3'; Length: 16; Trimmed: 16033 times.
+
+No. of allowed errors:
+0-9 bp: 0; 10-16 bp: 1
+
+Bases preceding removed adapters:
+  A: 26.5%
+  C: 9.8%
+  G: 31.3%
+  T: 32.4%
+  none/other: 0.0%
+
+Overview of removed sequences
+length	count	expect	max.err	error counts
+3	13707	17806.6	0	13707
+4	1808	4451.7	0	1808
+5	323	1112.9	0	323
+6	88	278.2	0	88
+7	47	69.6	0	47
+8	10	17.4	0	10
+9	20	4.3	0	8 12
+10	15	1.1	1	0 15
+11	15	0.3	1	0 15
+
+This is cutadapt 1.15 with Python 2.7.14
+Command line parameters: -a CGAGGCTGGCGTAAGA -A CGAGGCTGGCGTAAGA -o /project/grice/storage/HiSeq/WGS/HiSeq_19/TrimmedFastqs/Kocuria.atrinae.p4T3_trimmed_R1.fastq -p /project/grice/storage/HiSeq/WGS/HiSeq_19/TrimmedFastqs/Kocuria.atrinae.p4T3_trimmed_R2.fastq /project/grice/storage/HiSeq/WGS/HiSeq_19/Kocuria.atrinae.p4T3_R1.fastq /project/grice/storage/HiSeq/WGS/HiSeq_19/Kocuria.atrinae.p4T3_R2.fastq
+Running on 1 core
+Trimming 2 adapters with at most 10.0% errors in paired-end mode ...
+Finished in 34.97 s (34 us/read; 1.78 M reads/minute).
+
+=== Summary ===
+
+Total read pairs processed:          1,037,814
+  Read 1 with adapter:                  75,880 (7.3%)
+  Read 2 with adapter:                  33,363 (3.2%)
+Pairs written (passing filters):     1,037,814 (100.0%)
+
+Total basepairs processed:   261,529,128 bp
+  Read 1:   130,764,564 bp
+  Read 2:   130,764,564 bp
+Total written (filtered):    261,083,765 bp (99.8%)
+  Read 1:   130,429,631 bp
+  Read 2:   130,654,134 bp
+
+=== First read: Adapter 1 ===
+
+Sequence: CGAGGCTGGCGTAAGA; Type: regular 3'; Length: 16; Trimmed: 75880 times.
+
+No. of allowed errors:
+0-9 bp: 0; 10-16 bp: 1
+
+Bases preceding removed adapters:
+  A: 22.6%
+  C: 62.8%
+  G: 7.4%
+  T: 7.1%
+  none/other: 0.0%
+
+Overview of removed sequences
+length	count	expect	max.err	error counts
+3	30923	16215.8	0	30923
+4	20649	4054.0	0	20649
+5	6258	1013.5	0	6258
+6	5733	253.4	0	5733
+7	5749	63.3	0	5749
+8	6038	15.8	0	6038
+9	92	4.0	0	22 70
+10	316	1.0	1	2 314
+11	119	0.2	1	0 119
+12	3	0.1	1	0 3
+
+=== Second read: Adapter 2 ===
+
+Sequence: CGAGGCTGGCGTAAGA; Type: regular 3'; Length: 16; Trimmed: 33363 times.
+
+No. of allowed errors:
+0-9 bp: 0; 10-16 bp: 1
+
+Bases preceding removed adapters:
+  A: 31.8%
+  C: 35.1%
+  G: 16.4%
+  T: 16.7%
+  none/other: 0.0%
+
+Overview of removed sequences
+length	count	expect	max.err	error counts
+3	26439	16215.8	0	26439
+4	4870	4054.0	0	4870
+5	1397	1013.5	0	1397
+6	412	253.4	0	412
+7	69	63.3	0	69
+8	26	15.8	0	26
+9	43	4.0	0	2 41
+10	83	1.0	1	0 83
+11	20	0.2	1	0 20
+12	4	0.1	1	0 4
+
+This is cutadapt 1.15 with Python 2.7.14
+Command line parameters: -a ATCTCAGGTTCTAGCT -A ATCTCAGGTTCTAGCT -o /project/grice/storage/HiSeq/WGS/HiSeq_19/TrimmedFastqs/staphylococcus.hominis.5_trimmed_R1.fastq -p /project/grice/storage/HiSeq/WGS/HiSeq_19/TrimmedFastqs/staphylococcus.hominis.5_trimmed_R2.fastq /project/grice/storage/HiSeq/WGS/HiSeq_19/staphylococcus.hominis.5_R1.fastq /project/grice/storage/HiSeq/WGS/HiSeq_19/staphylococcus.hominis.5_R2.fastq
+Running on 1 core
+Trimming 2 adapters with at most 10.0% errors in paired-end mode ...
+Finished in 45.87 s (35 us/read; 1.74 M reads/minute).
+
+=== Summary ===
+
+Total read pairs processed:          1,329,024
+  Read 1 with adapter:                  94,398 (7.1%)
+  Read 2 with adapter:                  54,717 (4.1%)
+Pairs written (passing filters):     1,329,024 (100.0%)
+
+Total basepairs processed:   334,914,048 bp
+  Read 1:   167,457,024 bp
+  Read 2:   167,457,024 bp
+Total written (filtered):    334,200,934 bp (99.8%)
+  Read 1:   166,939,961 bp
+  Read 2:   167,260,973 bp
+
+=== First read: Adapter 1 ===
+
+Sequence: ATCTCAGGTTCTAGCT; Type: regular 3'; Length: 16; Trimmed: 94398 times.
+
+No. of allowed errors:
+0-9 bp: 0; 10-16 bp: 1
+
+Bases preceding removed adapters:
+  A: 8.5%
+  C: 76.1%
+  G: 6.3%
+  T: 9.0%
+  none/other: 0.0%
+
+Overview of removed sequences
+length	count	expect	max.err	error counts
+3	27889	20766.0	0	27889
+4	17297	5191.5	0	17297
+5	16774	1297.9	0	16774
+6	6074	324.5	0	6074
+7	6376	81.1	0	6376
+8	6404	20.3	0	6404
+9	30	5.1	0	8 22
+10	5148	1.3	1	0 5148
+11	4596	0.3	1	3 4593
+12	3807	0.1	1	2 3805
+13	2	0.0	1	0 2
+14	1	0.0	1	0 1
+
+=== Second read: Adapter 2 ===
+
+Sequence: ATCTCAGGTTCTAGCT; Type: regular 3'; Length: 16; Trimmed: 54717 times.
+
+No. of allowed errors:
+0-9 bp: 0; 10-16 bp: 1
+
+Bases preceding removed adapters:
+  A: 15.0%
+  C: 33.3%
+  G: 32.0%
+  T: 19.7%
+  none/other: 0.0%
+
+Overview of removed sequences
+length	count	expect	max.err	error counts
+3	30277	20766.0	0	30277
+4	17919	5191.5	0	17919
+5	6115	1297.9	0	6115
+6	220	324.5	0	220
+7	38	81.1	0	38
+8	4	20.3	0	4
+9	105	5.1	0	1 104
+10	29	1.3	1	0 29
+11	5	0.3	1	0 5
+12	4	0.1	1	0 4
+13	1	0.0	1	0 1
+
+This is cutadapt 1.15 with Python 2.7.14
+Command line parameters: -a GGAGCTACAAGGAGTA -A GGAGCTACAAGGAGTA -o /project/grice/storage/HiSeq/WGS/HiSeq_19/TrimmedFastqs/DORN1413_trimmed_R1.fastq -p /project/grice/storage/HiSeq/WGS/HiSeq_19/TrimmedFastqs/DORN1413_trimmed_R2.fastq /project/grice/storage/HiSeq/WGS/HiSeq_19/DORN1413_R1.fastq /project/grice/storage/HiSeq/WGS/HiSeq_19/DORN1413_R2.fastq
+Running on 1 core
+Trimming 2 adapters with at most 10.0% errors in paired-end mode ...
+Finished in 41.67 s (31 us/read; 1.94 M reads/minute).
+
+=== Summary ===
+
+Total read pairs processed:          1,347,007
+  Read 1 with adapter:                  69,269 (5.1%)
+  Read 2 with adapter:                   6,949 (0.5%)
+Pairs written (passing filters):     1,347,007 (100.0%)
+
+Total basepairs processed:   339,445,764 bp
+  Read 1:   169,722,882 bp
+  Read 2:   169,722,882 bp
+Total written (filtered):    338,979,790 bp (99.9%)
+  Read 1:   169,279,238 bp
+  Read 2:   169,700,552 bp
+
+=== First read: Adapter 1 ===
+
+Sequence: GGAGCTACAAGGAGTA; Type: regular 3'; Length: 16; Trimmed: 69269 times.
+
+No. of allowed errors:
+0-9 bp: 0; 10-16 bp: 1
+
+Bases preceding removed adapters:
+  A: 3.3%
+  C: 91.2%
+  G: 1.5%
+  T: 4.0%
+  none/other: 0.0%
+WARNING:
+    The adapter is preceded by "C" extremely often.
+    The provided adapter sequence may be incomplete.
+    To fix the problem, add "C" to the beginning of the adapter sequence.
+
+Overview of removed sequences
+length	count	expect	max.err	error counts
+3	11933	21047.0	0	11933
+4	7241	5261.7	0	7241
+5	7385	1315.4	0	7385
+6	8101	328.9	0	8101
+7	8663	82.2	0	8663
+8	9025	20.6	0	9025
+9	8796	5.1	0	8791 5
+10	8034	1.3	1	250 7784
+11	89	0.3	1	0 89
+13	2	0.0	1	0 2
+
+=== Second read: Adapter 2 ===
+
+Sequence: GGAGCTACAAGGAGTA; Type: regular 3'; Length: 16; Trimmed: 6949 times.
+
+No. of allowed errors:
+0-9 bp: 0; 10-16 bp: 1
+
+Overview of removed sequences
+length	count	expect	max.err	error counts
+3	5874	21047.0	0	5874
+4	850	5261.7	0	850
+5	137	1315.4	0	137
+6	54	328.9	0	54
+7	12	82.2	0	12
+8	1	20.6	0	1
+9	4	5.1	0	1 3
+10	16	1.3	1	0 16
+11	1	0.3	1	0 1
+
+WARNING:
+    One or more of your adapter sequences may be incomplete.
+    Please see the detailed output above.
+This is cutadapt 1.15 with Python 2.7.14
+Command line parameters: -a CGATCAGTTCTCTCCG -A CGATCAGTTCTCTCCG -o /project/grice/storage/HiSeq/WGS/HiSeq_19/TrimmedFastqs/Extractemptywell4_trimmed_R1.fastq -p /project/grice/storage/HiSeq/WGS/HiSeq_19/TrimmedFastqs/Extractemptywell4_trimmed_R2.fastq /project/grice/storage/HiSeq/WGS/HiSeq_19/Extractemptywell4_R1.fastq /project/grice/storage/HiSeq/WGS/HiSeq_19/Extractemptywell4_R2.fastq
+Running on 1 core
+Trimming 2 adapters with at most 10.0% errors in paired-end mode ...
+Finished in 0.04 s (43 us/read; 1.41 M reads/minute).
+
+=== Summary ===
+
+Total read pairs processed:                997
+  Read 1 with adapter:                      28 (2.8%)
+  Read 2 with adapter:                      18 (1.8%)
+Pairs written (passing filters):           997 (100.0%)
+
+Total basepairs processed:       251,244 bp
+  Read 1:       125,622 bp
+  Read 2:       125,622 bp
+Total written (filtered):        251,055 bp (99.9%)
+  Read 1:       125,490 bp
+  Read 2:       125,565 bp
+
+=== First read: Adapter 1 ===
+
+Sequence: CGATCAGTTCTCTCCG; Type: regular 3'; Length: 16; Trimmed: 28 times.
+
+No. of allowed errors:
+0-9 bp: 0; 10-16 bp: 1
+
+Bases preceding removed adapters:
+  A: 28.6%
+  C: 53.6%
+  G: 14.3%
+  T: 3.6%
+  none/other: 0.0%
+
+Overview of removed sequences
+length	count	expect	max.err	error counts
+3	20	15.6	0	20
+4	2	3.9	0	2
+8	2	0.0	0	2
+11	1	0.0	1	0 1
+12	2	0.0	1	0 2
+13	1	0.0	1	0 1
+
+=== Second read: Adapter 2 ===
+
+Sequence: CGATCAGTTCTCTCCG; Type: regular 3'; Length: 16; Trimmed: 18 times.
+
+No. of allowed errors:
+0-9 bp: 0; 10-16 bp: 1
+
+Bases preceding removed adapters:
+  A: 33.3%
+  C: 27.8%
+  G: 16.7%
+  T: 22.2%
+  none/other: 0.0%
+
+Overview of removed sequences
+length	count	expect	max.err	error counts
+3	15	15.6	0	15
+4	3	3.9	0	3
+
+This is cutadapt 1.15 with Python 2.7.14
+Command line parameters: -a CGGAGCCTTTATGCGA -A CGGAGCCTTTATGCGA -o /project/grice/storage/HiSeq/WGS/HiSeq_19/TrimmedFastqs/staphylococcus..warneri.1_trimmed_R1.fastq -p /project/grice/storage/HiSeq/WGS/HiSeq_19/TrimmedFastqs/staphylococcus..warneri.1_trimmed_R2.fastq /project/grice/storage/HiSeq/WGS/HiSeq_19/staphylococcus..warneri.1_R1.fastq /project/grice/storage/HiSeq/WGS/HiSeq_19/staphylococcus..warneri.1_R2.fastq
+Running on 1 core
+Trimming 2 adapters with at most 10.0% errors in paired-end mode ...
+Finished in 29.32 s (32 us/read; 1.89 M reads/minute).
+
+=== Summary ===
+
+Total read pairs processed:            925,390
+  Read 1 with adapter:                  27,543 (3.0%)
+  Read 2 with adapter:                   6,080 (0.7%)
+Pairs written (passing filters):       925,390 (100.0%)
+
+Total basepairs processed:   233,198,280 bp
+  Read 1:   116,599,140 bp
+  Read 2:   116,599,140 bp
+Total written (filtered):    233,011,509 bp (99.9%)
+  Read 1:   116,431,384 bp
+  Read 2:   116,580,125 bp
+
+=== First read: Adapter 1 ===
+
+Sequence: CGGAGCCTTTATGCGA; Type: regular 3'; Length: 16; Trimmed: 27543 times.
+
+No. of allowed errors:
+0-9 bp: 0; 10-16 bp: 1
+
+Bases preceding removed adapters:
+  A: 3.6%
+  C: 91.6%
+  G: 1.8%
+  T: 3.0%
+  none/other: 0.0%
+WARNING:
+    The adapter is preceded by "C" extremely often.
+    The provided adapter sequence may be incomplete.
+    To fix the problem, add "C" to the beginning of the adapter sequence.
+
+Overview of removed sequences
+length	count	expect	max.err	error counts
+3	4746	14459.2	0	4746
+4	3420	3614.8	0	3420
+5	3593	903.7	0	3593
+6	3861	225.9	0	3861
+7	4012	56.5	0	4012
+8	4288	14.1	0	4288
+9	5	3.5	0	5
+10	3549	0.9	1	0 3549
+11	44	0.2	1	0 44
+12	25	0.1	1	0 25
+
+=== Second read: Adapter 2 ===
+
+Sequence: CGGAGCCTTTATGCGA; Type: regular 3'; Length: 16; Trimmed: 6080 times.
+
+No. of allowed errors:
+0-9 bp: 0; 10-16 bp: 1
+
+Overview of removed sequences
+length	count	expect	max.err	error counts
+3	5475	14459.2	0	5475
+4	492	3614.8	0	492
+5	90	903.7	0	90
+6	11	225.9	0	11
+7	3	56.5	0	3
+8	1	14.1	0	1
+9	3	3.5	0	0 3
+10	5	0.9	1	0 5
+
+WARNING:
+    One or more of your adapter sequences may be incomplete.
+    Please see the detailed output above.
+This is cutadapt 1.15 with Python 2.7.14
+Command line parameters: -a AGGCAGAACTCTCTAT -A AGGCAGAACTCTCTAT -o /project/grice/storage/HiSeq/WGS/HiSeq_19/TrimmedFastqs/DORN280_trimmed_R1.fastq -p /project/grice/storage/HiSeq/WGS/HiSeq_19/TrimmedFastqs/DORN280_trimmed_R2.fastq /project/grice/storage/HiSeq/WGS/HiSeq_19/DORN280_R1.fastq /project/grice/storage/HiSeq/WGS/HiSeq_19/DORN280_R2.fastq
+Running on 1 core
+Trimming 2 adapters with at most 10.0% errors in paired-end mode ...
+Finished in 34.90 s (33 us/read; 1.83 M reads/minute).
+
+=== Summary ===
+
+Total read pairs processed:          1,066,254
+  Read 1 with adapter:                  34,461 (3.2%)
+  Read 2 with adapter:                  11,941 (1.1%)
+Pairs written (passing filters):     1,066,254 (100.0%)
+
+Total basepairs processed:   268,696,008 bp
+  Read 1:   134,348,004 bp
+  Read 2:   134,348,004 bp
+Total written (filtered):    268,426,457 bp (99.9%)
+  Read 1:   134,116,513 bp
+  Read 2:   134,309,944 bp
+
+=== First read: Adapter 1 ===
+
+Sequence: AGGCAGAACTCTCTAT; Type: regular 3'; Length: 16; Trimmed: 34461 times.
+
+No. of allowed errors:
+0-9 bp: 0; 10-16 bp: 1
+
+Bases preceding removed adapters:
+  A: 9.1%
+  C: 81.2%
+  G: 3.8%
+  T: 5.9%
+  none/other: 0.0%
+WARNING:
+    The adapter is preceded by "C" extremely often.
+    The provided adapter sequence may be incomplete.
+    To fix the problem, add "C" to the beginning of the adapter sequence.
+
+Overview of removed sequences
+length	count	expect	max.err	error counts
+3	8725	16660.2	0	8725
+4	3440	4165.1	0	3440
+5	3157	1041.3	0	3157
+6	3167	260.3	0	3167
+7	3192	65.1	0	3192
+8	3421	16.3	0	3421
+9	12	4.1	0	1 11
+10	2693	1.0	1	1 2692
+11	2565	0.3	1	1 2564
+12	2152	0.1	1	0 2152
+13	1903	0.0	1	0 1903
+16	1	0.0	1	0 1
+17	1	0.0	1	0 1
+22	2	0.0	1	0 2
+23	1	0.0	1	0 1
+24	1	0.0	1	0 1
+25	1	0.0	1	0 1
+26	1	0.0	1	0 1
+27	2	0.0	1	0 2
+28	4	0.0	1	0 4
+31	2	0.0	1	0 2
+33	1	0.0	1	0 1
+34	1	0.0	1	0 1
+36	2	0.0	1	0 2
+37	2	0.0	1	0 2
+39	1	0.0	1	0 1
+44	1	0.0	1	0 1
+45	1	0.0	1	0 1
+47	1	0.0	1	0 1
+48	1	0.0	1	0 1
+49	1	0.0	1	0 1
+50	1	0.0	1	0 1
+52	1	0.0	1	0 1
+59	1	0.0	1	0 1
+61	1	0.0	1	0 1
+64	1	0.0	1	0 1
+67	1	0.0	1	0 1
+
+=== Second read: Adapter 2 ===
+
+Sequence: AGGCAGAACTCTCTAT; Type: regular 3'; Length: 16; Trimmed: 11941 times.
+
+No. of allowed errors:
+0-9 bp: 0; 10-16 bp: 1
+
+Overview of removed sequences
+length	count	expect	max.err	error counts
+3	10362	16660.2	0	10362
+4	1105	4165.1	0	1105
+5	387	1041.3	0	387
+6	48	260.3	0	48
+7	16	65.1	0	16
+8	8	16.3	0	8
+9	3	4.1	0	0 3
+10	7	1.0	1	0 7
+11	2	0.3	1	0 2
+12	3	0.1	1	0 3
+
+WARNING:
+    One or more of your adapter sequences may be incomplete.
+    Please see the detailed output above.
+This is cutadapt 1.15 with Python 2.7.14
+Command line parameters: -a CGTACTAGTATCCTCT -A CGTACTAGTATCCTCT -o /project/grice/storage/HiSeq/WGS/HiSeq_19/TrimmedFastqs/DORN152_trimmed_R1.fastq -p /project/grice/storage/HiSeq/WGS/HiSeq_19/TrimmedFastqs/DORN152_trimmed_R2.fastq /project/grice/storage/HiSeq/WGS/HiSeq_19/DORN152_R1.fastq /project/grice/storage/HiSeq/WGS/HiSeq_19/DORN152_R2.fastq
+Running on 1 core
+Trimming 2 adapters with at most 10.0% errors in paired-end mode ...
+Finished in 46.17 s (33 us/read; 1.83 M reads/minute).
+
+=== Summary ===
+
+Total read pairs processed:          1,404,493
+  Read 1 with adapter:                  69,660 (5.0%)
+  Read 2 with adapter:                  18,829 (1.3%)
+Pairs written (passing filters):     1,404,493 (100.0%)
+
+Total basepairs processed:   353,932,236 bp
+  Read 1:   176,966,118 bp
+  Read 2:   176,966,118 bp
+Total written (filtered):    353,459,826 bp (99.9%)
+  Read 1:   176,557,245 bp
+  Read 2:   176,902,581 bp
+
+=== First read: Adapter 1 ===
+
+Sequence: CGTACTAGTATCCTCT; Type: regular 3'; Length: 16; Trimmed: 69660 times.
+
+No. of allowed errors:
+0-9 bp: 0; 10-16 bp: 1
+
+Bases preceding removed adapters:
+  A: 5.8%
+  C: 72.4%
+  G: 3.1%
+  T: 18.8%
+  none/other: 0.0%
+
+Overview of removed sequences
+length	count	expect	max.err	error counts
+3	20522	21945.2	0	20522
+4	11188	5486.3	0	11188
+5	5128	1371.6	0	5128
+6	5416	342.9	0	5416
+7	5622	85.7	0	5622
+8	5845	21.4	0	5845
+9	5918	5.4	0	5 5913
+10	5351	1.3	1	1 5350
+11	4564	0.3	1	0 4564
+12	51	0.1	1	0 51
+13	54	0.0	1	0 54
+15	1	0.0	1	0 1
+
+=== Second read: Adapter 2 ===
+
+Sequence: CGTACTAGTATCCTCT; Type: regular 3'; Length: 16; Trimmed: 18829 times.
+
+No. of allowed errors:
+0-9 bp: 0; 10-16 bp: 1
+
+Bases preceding removed adapters:
+  A: 22.1%
+  C: 44.5%
+  G: 11.6%
+  T: 21.9%
+  none/other: 0.0%
+
+Overview of removed sequences
+length	count	expect	max.err	error counts
+3	12792	21945.2	0	12792
+4	5433	5486.3	0	5433
+5	414	1371.6	0	414
+6	112	342.9	0	112
+7	30	85.7	0	30
+8	2	21.4	0	2
+9	10	5.4	0	3 7
+10	26	1.3	1	0 26
+11	9	0.3	1	0 9
+12	1	0.1	1	0 1
+
+This is cutadapt 1.15 with Python 2.7.14
+Command line parameters: -a GCGTAGTACTAAGCCT -A GCGTAGTACTAAGCCT -o /project/grice/storage/HiSeq/WGS/HiSeq_19/TrimmedFastqs/DORN1471_trimmed_R1.fastq -p /project/grice/storage/HiSeq/WGS/HiSeq_19/TrimmedFastqs/DORN1471_trimmed_R2.fastq /project/grice/storage/HiSeq/WGS/HiSeq_19/DORN1471_R1.fastq /project/grice/storage/HiSeq/WGS/HiSeq_19/DORN1471_R2.fastq
+Running on 1 core
+Trimming 2 adapters with at most 10.0% errors in paired-end mode ...
+Finished in 42.04 s (31 us/read; 1.95 M reads/minute).
+
+=== Summary ===
+
+Total read pairs processed:          1,369,871
+  Read 1 with adapter:                  48,560 (3.5%)
+  Read 2 with adapter:                   6,672 (0.5%)
+Pairs written (passing filters):     1,369,871 (100.0%)
+
+Total basepairs processed:   345,207,492 bp
+  Read 1:   172,603,746 bp
+  Read 2:   172,603,746 bp
+Total written (filtered):    344,890,201 bp (99.9%)
+  Read 1:   172,311,374 bp
+  Read 2:   172,578,827 bp
+
+=== First read: Adapter 1 ===
+
+Sequence: GCGTAGTACTAAGCCT; Type: regular 3'; Length: 16; Trimmed: 48560 times.
+
+No. of allowed errors:
+0-9 bp: 0; 10-16 bp: 1
+
+Bases preceding removed adapters:
+  A: 4.4%
+  C: 88.5%
+  G: 2.7%
+  T: 4.4%
+  none/other: 0.0%
+WARNING:
+    The adapter is preceded by "C" extremely often.
+    The provided adapter sequence may be incomplete.
+    To fix the problem, add "C" to the beginning of the adapter sequence.
+
+Overview of removed sequences
+length	count	expect	max.err	error counts
+3	9281	21404.2	0	9281
+4	6395	5351.1	0	6395
+5	6325	1337.8	0	6325
+6	6387	334.4	0	6387
+7	6809	83.6	0	6809
+8	7151	20.9	0	7151
+9	22	5.2	0	3 19
+10	6056	1.3	1	0 6056
+11	101	0.3	1	0 101
+12	2	0.1	1	0 2
+19	6	0.0	1	0 6
+30	1	0.0	1	0 1
+36	2	0.0	1	0 2
+39	1	0.0	1	0 1
+56	1	0.0	1	0 1
+69	1	0.0	1	0 1
+70	2	0.0	1	0 2
+81	1	0.0	1	0 1
+86	2	0.0	1	0 2
+88	1	0.0	1	0 1
+90	1	0.0	1	0 1
+93	1	0.0	1	0 1
+100	3	0.0	1	0 3
+106	4	0.0	1	0 4
+107	1	0.0	1	0 1
+111	1	0.0	1	0 1
+126	2	0.0	1	0 2
+
+=== Second read: Adapter 2 ===
+
+Sequence: GCGTAGTACTAAGCCT; Type: regular 3'; Length: 16; Trimmed: 6672 times.
+
+No. of allowed errors:
+0-9 bp: 0; 10-16 bp: 1
+
+Overview of removed sequences
+length	count	expect	max.err	error counts
+3	4670	21404.2	0	4670
+4	1401	5351.1	0	1401
+5	424	1337.8	0	424
+6	99	334.4	0	99
+7	18	83.6	0	18
+8	5	20.9	0	5
+9	11	5.2	0	0 11
+10	10	1.3	1	0 10
+11	5	0.3	1	0 5
+12	2	0.1	1	0 2
+14	1	0.0	1	0 1
+19	3	0.0	1	0 3
+36	1	0.0	1	0 1
+51	2	0.0	1	0 2
+63	1	0.0	1	0 1
+64	1	0.0	1	0 1
+70	2	0.0	1	0 2
+86	1	0.0	1	0 1
+88	2	0.0	1	0 2
+100	2	0.0	1	0 2
+106	6	0.0	1	0 6
+111	3	0.0	1	0 3
+116	1	0.0	1	0 1
+124	1	0.0	1	0 1
+
+WARNING:
+    One or more of your adapter sequences may be incomplete.
+    Please see the detailed output above.
+This is cutadapt 1.15 with Python 2.7.14
+Command line parameters: -a ATGCGCAGCTCTCTAT -A ATGCGCAGCTCTCTAT -o /project/grice/storage/HiSeq/WGS/HiSeq_19/TrimmedFastqs/DORN1575_trimmed_R1.fastq -p /project/grice/storage/HiSeq/WGS/HiSeq_19/TrimmedFastqs/DORN1575_trimmed_R2.fastq /project/grice/storage/HiSeq/WGS/HiSeq_19/DORN1575_R1.fastq /project/grice/storage/HiSeq/WGS/HiSeq_19/DORN1575_R2.fastq
+Running on 1 core
+Trimming 2 adapters with at most 10.0% errors in paired-end mode ...
+Finished in 43.37 s (34 us/read; 1.74 M reads/minute).
+
+=== Summary ===
+
+Total read pairs processed:          1,258,323
+  Read 1 with adapter:                  79,264 (6.3%)
+  Read 2 with adapter:                  21,732 (1.7%)
+Pairs written (passing filters):     1,258,323 (100.0%)
+
+Total basepairs processed:   317,097,396 bp
+  Read 1:   158,548,698 bp
+  Read 2:   158,548,698 bp
+Total written (filtered):    316,555,458 bp (99.8%)
+  Read 1:   158,076,962 bp
+  Read 2:   158,478,496 bp
+
+=== First read: Adapter 1 ===
+
+Sequence: ATGCGCAGCTCTCTAT; Type: regular 3'; Length: 16; Trimmed: 79264 times.
+
+No. of allowed errors:
+0-9 bp: 0; 10-16 bp: 1
+
+Bases preceding removed adapters:
+  A: 11.1%
+  C: 62.7%
+  G: 6.0%
+  T: 20.3%
+  none/other: 0.0%
+
+Overview of removed sequences
+length	count	expect	max.err	error counts
+3	27052	19661.3	0	27052
+4	13140	4915.3	0	13140
+5	5196	1228.8	0	5196
+6	5456	307.2	0	5456
+7	5824	76.8	0	5824
+8	5934	19.2	0	5934
+9	16	4.8	0	6 10
+10	4968	1.2	1	1 4967
+11	4533	0.3	1	5 4528
+12	3708	0.1	1	3 3705
+13	3349	0.0	1	2 3347
+14	5	0.0	1	0 5
+15	5	0.0	1	0 5
+16	3	0.0	1	0 3
+17	1	0.0	1	0 1
+19	2	0.0	1	0 2
+20	4	0.0	1	0 4
+21	2	0.0	1	0 2
+22	1	0.0	1	0 1
+23	2	0.0	1	0 2
+24	1	0.0	1	0 1
+27	2	0.0	1	0 2
+28	5	0.0	1	0 5
+29	1	0.0	1	0 1
+30	2	0.0	1	0 2
+31	3	0.0	1	0 3
+32	2	0.0	1	0 2
+33	3	0.0	1	0 3
+35	3	0.0	1	0 3
+36	2	0.0	1	0 2
+37	3	0.0	1	0 3
+38	1	0.0	1	0 1
+40	2	0.0	1	0 2
+42	5	0.0	1	0 5
+43	1	0.0	1	0 1
+47	1	0.0	1	0 1
+48	2	0.0	1	0 2
+49	2	0.0	1	0 2
+50	2	0.0	1	0 2
+51	2	0.0	1	0 2
+52	3	0.0	1	0 3
+55	1	0.0	1	0 1
+56	1	0.0	1	0 1
+57	2	0.0	1	0 2
+58	1	0.0	1	0 1
+59	1	0.0	1	0 1
+61	2	0.0	1	0 2
+65	1	0.0	1	0 1
+66	1	0.0	1	0 1
+98	5	0.0	1	0 5
+
+=== Second read: Adapter 2 ===
+
+Sequence: ATGCGCAGCTCTCTAT; Type: regular 3'; Length: 16; Trimmed: 21732 times.
+
+No. of allowed errors:
+0-9 bp: 0; 10-16 bp: 1
+
+Bases preceding removed adapters:
+  A: 39.5%
+  C: 14.3%
+  G: 21.7%
+  T: 24.5%
+  none/other: 0.0%
+
+Overview of removed sequences
+length	count	expect	max.err	error counts
+3	17596	19661.3	0	17596
+4	3495	4915.3	0	3495
+5	502	1228.8	0	502
+6	95	307.2	0	95
+7	23	76.8	0	23
+8	6	19.2	0	6
+9	6	4.8	0	0 6
+10	8	1.2	1	0 8
+11	1	0.3	1	0 1
+
+This is cutadapt 1.15 with Python 2.7.14
+Command line parameters: -a TGCAGCTATTATGCGA -A TGCAGCTATTATGCGA -o /project/grice/storage/HiSeq/WGS/HiSeq_19/TrimmedFastqs/corynebacterium..singulare_trimmed_R1.fastq -p /project/grice/storage/HiSeq/WGS/HiSeq_19/TrimmedFastqs/corynebacterium..singulare_trimmed_R2.fastq /project/grice/storage/HiSeq/WGS/HiSeq_19/corynebacterium..singulare_R1.fastq /project/grice/storage/HiSeq/WGS/HiSeq_19/corynebacterium..singulare_R2.fastq
+Running on 1 core
+Trimming 2 adapters with at most 10.0% errors in paired-end mode ...
+Finished in 47.52 s (33 us/read; 1.82 M reads/minute).
+
+=== Summary ===
+
+Total read pairs processed:          1,440,771
+  Read 1 with adapter:                  88,705 (6.2%)
+  Read 2 with adapter:                  26,804 (1.9%)
+Pairs written (passing filters):     1,440,771 (100.0%)
+
+Total basepairs processed:   363,074,292 bp
+  Read 1:   181,537,146 bp
+  Read 2:   181,537,146 bp
+Total written (filtered):    362,537,097 bp (99.9%)
+  Read 1:   181,087,249 bp
+  Read 2:   181,449,848 bp
+
+=== First read: Adapter 1 ===
+
+Sequence: TGCAGCTATTATGCGA; Type: regular 3'; Length: 16; Trimmed: 88705 times.
+
+No. of allowed errors:
+0-9 bp: 0; 10-16 bp: 1
+
+Bases preceding removed adapters:
+  A: 14.2%
+  C: 75.1%
+  G: 6.3%
+  T: 4.4%
+  none/other: 0.0%
+
+Overview of removed sequences
+length	count	expect	max.err	error counts
+3	38373	22512.0	0	38373
+4	8768	5628.0	0	8768
+5	7939	1407.0	0	7939
+6	8329	351.8	0	8329
+7	8457	87.9	0	8457
+8	8824	22.0	0	8824
+9	200	5.5	0	194 6
+10	7557	1.4	1	1 7556
+11	220	0.3	1	0 220
+12	38	0.1	1	0 38
+
+=== Second read: Adapter 2 ===
+
+Sequence: TGCAGCTATTATGCGA; Type: regular 3'; Length: 16; Trimmed: 26804 times.
+
+No. of allowed errors:
+0-9 bp: 0; 10-16 bp: 1
+
+Bases preceding removed adapters:
+  A: 15.8%
+  C: 48.8%
+  G: 20.7%
+  T: 14.6%
+  none/other: 0.0%
+
+Overview of removed sequences
+length	count	expect	max.err	error counts
+3	22316	22512.0	0	22316
+4	2822	5628.0	0	2822
+5	1138	1407.0	0	1138
+6	395	351.8	0	395
+7	104	87.9	0	104
+8	6	22.0	0	6
+9	8	5.5	0	2 6
+10	11	1.4	1	0 11
+11	4	0.3	1	0 4
+
+This is cutadapt 1.15 with Python 2.7.14
+Command line parameters: -a CGATCAGTGAGCCTTA -A CGATCAGTGAGCCTTA -o /project/grice/storage/HiSeq/WGS/HiSeq_19/TrimmedFastqs/streptococcus.oralis_trimmed_R1.fastq -p /project/grice/storage/HiSeq/WGS/HiSeq_19/TrimmedFastqs/streptococcus.oralis_trimmed_R2.fastq /project/grice/storage/HiSeq/WGS/HiSeq_19/streptococcus.oralis_R1.fastq /project/grice/storage/HiSeq/WGS/HiSeq_19/streptococcus.oralis_R2.fastq
+Running on 1 core
+Trimming 2 adapters with at most 10.0% errors in paired-end mode ...
+Finished in 47.14 s (32 us/read; 1.85 M reads/minute).
+
+=== Summary ===
+
+Total read pairs processed:          1,450,697
+  Read 1 with adapter:                  68,640 (4.7%)
+  Read 2 with adapter:                  32,325 (2.2%)
+Pairs written (passing filters):     1,450,697 (100.0%)
+
+Total basepairs processed:   365,575,644 bp
+  Read 1:   182,787,822 bp
+  Read 2:   182,787,822 bp
+Total written (filtered):    365,116,238 bp (99.9%)
+  Read 1:   182,436,202 bp
+  Read 2:   182,680,036 bp
+
+=== First read: Adapter 1 ===
+
+Sequence: CGATCAGTGAGCCTTA; Type: regular 3'; Length: 16; Trimmed: 68640 times.
+
+No. of allowed errors:
+0-9 bp: 0; 10-16 bp: 1
+
+Bases preceding removed adapters:
+  A: 16.7%
+  C: 74.6%
+  G: 3.4%
+  T: 5.2%
+  none/other: 0.0%
+
+Overview of removed sequences
+length	count	expect	max.err	error counts
+3	27105	22667.1	0	27105
+4	7800	5666.8	0	7800
+5	6098	1416.7	0	6098
+6	6533	354.2	0	6533
+7	6912	88.5	0	6912
+8	7027	22.1	0	7027
+9	6879	5.5	0	1 6878
+10	241	1.4	1	0 241
+11	44	0.3	1	0 44
+12	1	0.1	1	0 1
+
+=== Second read: Adapter 2 ===
+
+Sequence: CGATCAGTGAGCCTTA; Type: regular 3'; Length: 16; Trimmed: 32325 times.
+
+No. of allowed errors:
+0-9 bp: 0; 10-16 bp: 1
+
+Bases preceding removed adapters:
+  A: 53.3%
+  C: 26.7%
+  G: 7.6%
+  T: 12.3%
+  none/other: 0.0%
+
+Overview of removed sequences
+length	count	expect	max.err	error counts
+3	22562	22667.1	0	22562
+4	9059	5666.8	0	9059
+5	519	1416.7	0	519
+6	127	354.2	0	127
+7	18	88.5	0	18
+8	1	22.1	0	1
+9	26	5.5	0	0 26
+10	7	1.4	1	0 7
+11	5	0.3	1	0 5
+14	1	0.0	1	0 1
+
+This is cutadapt 1.15 with Python 2.7.14
+Command line parameters: -a ACTCGCTATATCCTCT -A ACTCGCTATATCCTCT -o /project/grice/storage/HiSeq/WGS/HiSeq_19/TrimmedFastqs/DORN1353_trimmed_R1.fastq -p /project/grice/storage/HiSeq/WGS/HiSeq_19/TrimmedFastqs/DORN1353_trimmed_R2.fastq /project/grice/storage/HiSeq/WGS/HiSeq_19/DORN1353_R1.fastq /project/grice/storage/HiSeq/WGS/HiSeq_19/DORN1353_R2.fastq
+Running on 1 core
+Trimming 2 adapters with at most 10.0% errors in paired-end mode ...
+Finished in 48.71 s (33 us/read; 1.80 M reads/minute).
+
+=== Summary ===
+
+Total read pairs processed:          1,461,096
+  Read 1 with adapter:                  71,811 (4.9%)
+  Read 2 with adapter:                  17,732 (1.2%)
+Pairs written (passing filters):     1,461,096 (100.0%)
+
+Total basepairs processed:   368,196,192 bp
+  Read 1:   184,098,096 bp
+  Read 2:   184,098,096 bp
+Total written (filtered):    367,692,792 bp (99.9%)
+  Read 1:   183,651,354 bp
+  Read 2:   184,041,438 bp
+
+=== First read: Adapter 1 ===
+
+Sequence: ACTCGCTATATCCTCT; Type: regular 3'; Length: 16; Trimmed: 71811 times.
+
+No. of allowed errors:
+0-9 bp: 0; 10-16 bp: 1
+
+Bases preceding removed adapters:
+  A: 9.4%
+  C: 79.5%
+  G: 3.6%
+  T: 7.5%
+  none/other: 0.0%
+
+Overview of removed sequences
+length	count	expect	max.err	error counts
+3	19994	22829.6	0	19994
+4	6765	5707.4	0	6765
+5	5931	1426.9	0	5931
+6	6426	356.7	0	6426
+7	6856	89.2	0	6856
+8	6987	22.3	0	6987
+9	6798	5.6	0	19 6779
+10	6411	1.4	1	1 6410
+11	5482	0.3	1	0 5482
+12	86	0.1	1	0 86
+13	75	0.0	1	0 75
+
+=== Second read: Adapter 2 ===
+
+Sequence: ACTCGCTATATCCTCT; Type: regular 3'; Length: 16; Trimmed: 17732 times.
+
+No. of allowed errors:
+0-9 bp: 0; 10-16 bp: 1
+
+Bases preceding removed adapters:
+  A: 37.1%
+  C: 19.6%
+  G: 14.4%
+  T: 29.0%
+  none/other: 0.0%
+
+Overview of removed sequences
+length	count	expect	max.err	error counts
+3	15298	22829.6	0	15298
+4	1889	5707.4	0	1889
+5	375	1426.9	0	375
+6	70	356.7	0	70
+7	28	89.2	0	28
+8	6	22.3	0	6
+9	18	5.6	0	1 17
+10	34	1.4	1	0 34
+11	6	0.3	1	0 6
+12	3	0.1	1	0 3
+13	5	0.0	1	0 5
+
+This is cutadapt 1.15 with Python 2.7.14
+Command line parameters: -a ATGCGCAGAAGGAGTA -A ATGCGCAGAAGGAGTA -o /project/grice/storage/HiSeq/WGS/HiSeq_19/TrimmedFastqs/DORN1602_trimmed_R1.fastq -p /project/grice/storage/HiSeq/WGS/HiSeq_19/TrimmedFastqs/DORN1602_trimmed_R2.fastq /project/grice/storage/HiSeq/WGS/HiSeq_19/DORN1602_R1.fastq /project/grice/storage/HiSeq/WGS/HiSeq_19/DORN1602_R2.fastq
+Running on 1 core
+Trimming 2 adapters with at most 10.0% errors in paired-end mode ...
+Finished in 57.80 s (33 us/read; 1.79 M reads/minute).
+
+=== Summary ===
+
+Total read pairs processed:          1,725,966
+  Read 1 with adapter:                  91,328 (5.3%)
+  Read 2 with adapter:                  31,808 (1.8%)
+Pairs written (passing filters):     1,725,966 (100.0%)
+
+Total basepairs processed:   434,943,432 bp
+  Read 1:   217,471,716 bp
+  Read 2:   217,471,716 bp
+Total written (filtered):    434,373,277 bp (99.9%)
+  Read 1:   217,004,725 bp
+  Read 2:   217,368,552 bp
+
+=== First read: Adapter 1 ===
+
+Sequence: ATGCGCAGAAGGAGTA; Type: regular 3'; Length: 16; Trimmed: 91328 times.
+
+No. of allowed errors:
+0-9 bp: 0; 10-16 bp: 1
+
+Bases preceding removed adapters:
+  A: 13.7%
+  C: 57.0%
+  G: 7.4%
+  T: 21.9%
+  none/other: 0.0%
+
+Overview of removed sequences
+length	count	expect	max.err	error counts
+3	36280	26968.2	0	36280
+4	15744	6742.1	0	15744
+5	6431	1685.5	0	6431
+6	6381	421.4	0	6381
+7	6677	105.3	0	6677
+8	6851	26.3	0	6851
+9	6582	6.6	0	6563 19
+10	6258	1.6	1	270 5988
+11	120	0.4	1	0 120
+12	3	0.1	1	0 3
+13	1	0.0	1	0 1
+
+=== Second read: Adapter 2 ===
+
+Sequence: ATGCGCAGAAGGAGTA; Type: regular 3'; Length: 16; Trimmed: 31808 times.
+
+No. of allowed errors:
+0-9 bp: 0; 10-16 bp: 1
+
+Bases preceding removed adapters:
+  A: 39.4%
+  C: 14.5%
+  G: 21.5%
+  T: 24.6%
+  none/other: 0.0%
+
+Overview of removed sequences
+length	count	expect	max.err	error counts
+3	25676	26968.2	0	25676
+4	5129	6742.1	0	5129
+5	728	1685.5	0	728
+6	141	421.4	0	141
+7	66	105.3	0	66
+8	4	26.3	0	4
+9	16	6.6	0	1 15
+10	33	1.6	1	1 32
+11	14	0.4	1	0 14
+12	1	0.1	1	0 1
+
+This is cutadapt 1.15 with Python 2.7.14
+Command line parameters: -a GGAGCTACCGTCTAAT -A GGAGCTACCGTCTAAT -o /project/grice/storage/HiSeq/WGS/HiSeq_19/TrimmedFastqs/DORN1455_trimmed_R1.fastq -p /project/grice/storage/HiSeq/WGS/HiSeq_19/TrimmedFastqs/DORN1455_trimmed_R2.fastq /project/grice/storage/HiSeq/WGS/HiSeq_19/DORN1455_R1.fastq /project/grice/storage/HiSeq/WGS/HiSeq_19/DORN1455_R2.fastq
+Running on 1 core
+Trimming 2 adapters with at most 10.0% errors in paired-end mode ...
+Finished in 55.20 s (31 us/read; 1.93 M reads/minute).
+
+=== Summary ===
+
+Total read pairs processed:          1,777,478
+  Read 1 with adapter:                  86,779 (4.9%)
+  Read 2 with adapter:                   8,245 (0.5%)
+Pairs written (passing filters):     1,777,478 (100.0%)
+
+Total basepairs processed:   447,924,456 bp
+  Read 1:   223,962,228 bp
+  Read 2:   223,962,228 bp
+Total written (filtered):    447,407,820 bp (99.9%)
+  Read 1:   223,473,454 bp
+  Read 2:   223,934,366 bp
+
+=== First read: Adapter 1 ===
+
+Sequence: GGAGCTACCGTCTAAT; Type: regular 3'; Length: 16; Trimmed: 86779 times.
+
+No. of allowed errors:
+0-9 bp: 0; 10-16 bp: 1
+
+Bases preceding removed adapters:
+  A: 2.5%
+  C: 93.6%
+  G: 1.1%
+  T: 2.8%
+  none/other: 0.0%
+WARNING:
+    The adapter is preceded by "C" extremely often.
+    The provided adapter sequence may be incomplete.
+    To fix the problem, add "C" to the beginning of the adapter sequence.
+
+Overview of removed sequences
+length	count	expect	max.err	error counts
+3	15510	27773.1	0	15510
+4	11587	6943.3	0	11587
+5	12767	1735.8	0	12767
+6	14351	434.0	0	14351
+7	15934	108.5	0	15934
+8	16465	27.1	0	16465
+9	35	6.8	0	34 1
+10	87	1.7	1	1 86
+11	16	0.4	1	0 16
+12	8	0.1	1	0 8
+13	4	0.0	1	0 4
+35	1	0.0	1	0 1
+40	1	0.0	1	0 1
+64	1	0.0	1	0 1
+70	2	0.0	1	0 2
+73	1	0.0	1	0 1
+78	2	0.0	1	0 2
+82	1	0.0	1	0 1
+83	1	0.0	1	0 1
+88	1	0.0	1	0 1
+90	1	0.0	1	0 1
+110	2	0.0	1	0 2
+117	1	0.0	1	0 1
+
+=== Second read: Adapter 2 ===
+
+Sequence: GGAGCTACCGTCTAAT; Type: regular 3'; Length: 16; Trimmed: 8245 times.
+
+No. of allowed errors:
+0-9 bp: 0; 10-16 bp: 1
+
+Overview of removed sequences
+length	count	expect	max.err	error counts
+3	6439	27773.1	0	6439
+4	1524	6943.3	0	1524
+5	178	1735.8	0	178
+6	69	434.0	0	69
+7	13	108.5	0	13
+8	1	27.1	0	1
+9	2	6.8	0	2
+10	2	1.7	1	0 2
+11	1	0.4	1	0 1
+12	2	0.1	1	0 2
+13	2	0.0	1	0 2
+35	1	0.0	1	0 1
+48	3	0.0	1	0 3
+60	1	0.0	1	0 1
+83	1	0.0	1	0 1
+84	1	0.0	1	0 1
+90	1	0.0	1	0 1
+100	1	0.0	1	0 1
+110	1	0.0	1	0 1
+117	1	0.0	1	0 1
+124	1	0.0	1	0 1
+
+WARNING:
+    One or more of your adapter sequences may be incomplete.
+    Please see the detailed output above.
+This is cutadapt 1.15 with Python 2.7.14
+Command line parameters: -a CGATCAGTGCGTAAGA -A CGATCAGTGCGTAAGA -o /project/grice/storage/HiSeq/WGS/HiSeq_19/TrimmedFastqs/no.id.11.1.7.10_trimmed_R1.fastq -p /project/grice/storage/HiSeq/WGS/HiSeq_19/TrimmedFastqs/no.id.11.1.7.10_trimmed_R2.fastq /project/grice/storage/HiSeq/WGS/HiSeq_19/no.id.11.1.7.10_R1.fastq /project/grice/storage/HiSeq/WGS/HiSeq_19/no.id.11.1.7.10_R2.fastq
+Running on 1 core
+Trimming 2 adapters with at most 10.0% errors in paired-end mode ...
+Finished in 67.80 s (33 us/read; 1.84 M reads/minute).
+
+=== Summary ===
+
+Total read pairs processed:          2,080,215
+  Read 1 with adapter:                  77,869 (3.7%)
+  Read 2 with adapter:                  51,087 (2.5%)
+Pairs written (passing filters):     2,080,215 (100.0%)
+
+Total basepairs processed:   524,214,180 bp
+  Read 1:   262,107,090 bp
+  Read 2:   262,107,090 bp
+Total written (filtered):    523,684,505 bp (99.9%)
+  Read 1:   261,759,730 bp
+  Read 2:   261,924,775 bp
+
+=== First read: Adapter 1 ===
+
+Sequence: CGATCAGTGCGTAAGA; Type: regular 3'; Length: 16; Trimmed: 77869 times.
+
+No. of allowed errors:
+0-9 bp: 0; 10-16 bp: 1
+
+Bases preceding removed adapters:
+  A: 20.9%
+  C: 63.7%
+  G: 5.7%
+  T: 9.7%
+  none/other: 0.0%
+
+Overview of removed sequences
+length	count	expect	max.err	error counts
+3	37048	32503.4	0	37048
+4	11699	8125.8	0	11699
+5	7562	2031.5	0	7562
+6	7127	507.9	0	7127
+7	7155	127.0	0	7155
+8	7025	31.7	0	7025
+9	38	7.9	0	3 35
+10	155	2.0	1	1 154
+11	51	0.5	1	0 51
+12	7	0.1	1	0 7
+13	2	0.0	1	0 2
+
+=== Second read: Adapter 2 ===
+
+Sequence: CGATCAGTGCGTAAGA; Type: regular 3'; Length: 16; Trimmed: 51087 times.
+
+No. of allowed errors:
+0-9 bp: 0; 10-16 bp: 1
+
+Bases preceding removed adapters:
+  A: 53.5%
+  C: 22.1%
+  G: 8.9%
+  T: 15.5%
+  none/other: 0.0%
+
+Overview of removed sequences
+length	count	expect	max.err	error counts
+3	31034	32503.4	0	31034
+4	12195	8125.8	0	12195
+5	7139	2031.5	0	7139
+6	560	507.9	0	560
+7	56	127.0	0	56
+8	15	31.7	0	15
+9	30	7.9	0	7 23
+10	43	2.0	1	0 43
+11	14	0.5	1	0 14
+12	1	0.1	1	0 1
+
+This is cutadapt 1.15 with Python 2.7.14
+Command line parameters: -a TGCAGCTAACTGCATA -A TGCAGCTAACTGCATA -o /project/grice/storage/HiSeq/WGS/HiSeq_19/TrimmedFastqs/DORN1794_trimmed_R1.fastq -p /project/grice/storage/HiSeq/WGS/HiSeq_19/TrimmedFastqs/DORN1794_trimmed_R2.fastq /project/grice/storage/HiSeq/WGS/HiSeq_19/DORN1794_R1.fastq /project/grice/storage/HiSeq/WGS/HiSeq_19/DORN1794_R2.fastq
+Running on 1 core
+Trimming 2 adapters with at most 10.0% errors in paired-end mode ...
+Finished in 33.87 s (36 us/read; 1.66 M reads/minute).
+
+=== Summary ===
+
+Total read pairs processed:            939,296
+  Read 1 with adapter:                  47,478 (5.1%)
+  Read 2 with adapter:                  23,955 (2.6%)
+Pairs written (passing filters):       939,296 (100.0%)
+
+Total basepairs processed:   236,702,592 bp
+  Read 1:   118,351,296 bp
+  Read 2:   118,351,296 bp
+Total written (filtered):    236,334,604 bp (99.8%)
+  Read 1:   118,071,029 bp
+  Read 2:   118,263,575 bp
+
+=== First read: Adapter 1 ===
+
+Sequence: TGCAGCTAACTGCATA; Type: regular 3'; Length: 16; Trimmed: 47478 times.
+
+No. of allowed errors:
+0-9 bp: 0; 10-16 bp: 1
+
+Bases preceding removed adapters:
+  A: 15.1%
+  C: 71.2%
+  G: 4.1%
+  T: 9.7%
+  none/other: 0.0%
+
+Overview of removed sequences
+length	count	expect	max.err	error counts
+3	16815	14676.5	0	16815
+4	5590	3669.1	0	5590
+5	3415	917.3	0	3415
+6	3290	229.3	0	3290
+7	3441	57.3	0	3441
+8	3546	14.3	0	3546
+9	3392	3.6	0	3372 20
+10	3186	0.9	1	42 3144
+11	2599	0.2	1	0 2599
+12	2188	0.1	1	0 2188
+13	2	0.0	1	0 2
+14	2	0.0	1	0 2
+34	1	0.0	1	0 1
+67	2	0.0	1	0 2
+68	2	0.0	1	0 2
+73	2	0.0	1	0 2
+76	1	0.0	1	0 1
+79	1	0.0	1	0 1
+87	1	0.0	1	0 1
+100	1	0.0	1	0 1
+113	1	0.0	1	0 1
+
+=== Second read: Adapter 2 ===
+
+Sequence: TGCAGCTAACTGCATA; Type: regular 3'; Length: 16; Trimmed: 23955 times.
+
+No. of allowed errors:
+0-9 bp: 0; 10-16 bp: 1
+
+Bases preceding removed adapters:
+  A: 52.0%
+  C: 19.8%
+  G: 9.1%
+  T: 19.1%
+  none/other: 0.0%
+
+Overview of removed sequences
+length	count	expect	max.err	error counts
+3	13909	14676.5	0	13909
+4	6015	3669.1	0	6015
+5	3650	917.3	0	3650
+6	190	229.3	0	190
+7	70	57.3	0	70
+8	16	14.3	0	16
+9	23	3.6	0	7 16
+10	48	0.9	1	4 44
+11	5	0.2	1	0 5
+12	11	0.1	1	0 11
+13	2	0.0	1	0 2
+14	3	0.0	1	0 3
+22	1	0.0	1	0 1
+54	1	0.0	1	0 1
+67	1	0.0	1	0 1
+68	2	0.0	1	0 2
+73	2	0.0	1	0 2
+78	3	0.0	1	0 3
+89	1	0.0	1	0 1
+113	1	0.0	1	0 1
+123	1	0.0	1	0 1
+
+This is cutadapt 1.15 with Python 2.7.14
+Command line parameters: -a TAGGCATGCGTCTAAT -A TAGGCATGCGTCTAAT -o /project/grice/storage/HiSeq/WGS/HiSeq_19/TrimmedFastqs/DORN613_trimmed_R1.fastq -p /project/grice/storage/HiSeq/WGS/HiSeq_19/TrimmedFastqs/DORN613_trimmed_R2.fastq /project/grice/storage/HiSeq/WGS/HiSeq_19/DORN613_R1.fastq /project/grice/storage/HiSeq/WGS/HiSeq_19/DORN613_R2.fastq
+Running on 1 core
+Trimming 2 adapters with at most 10.0% errors in paired-end mode ...
+Finished in 57.38 s (33 us/read; 1.80 M reads/minute).
+
+=== Summary ===
+
+Total read pairs processed:          1,725,436
+  Read 1 with adapter:                  59,157 (3.4%)
+  Read 2 with adapter:                  30,031 (1.7%)
+Pairs written (passing filters):     1,725,436 (100.0%)
+
+Total basepairs processed:   434,809,872 bp
+  Read 1:   217,404,936 bp
+  Read 2:   217,404,936 bp
+Total written (filtered):    434,421,257 bp (99.9%)
+  Read 1:   217,110,819 bp
+  Read 2:   217,310,438 bp
+
+=== First read: Adapter 1 ===
+
+Sequence: TAGGCATGCGTCTAAT; Type: regular 3'; Length: 16; Trimmed: 59157 times.
+
+No. of allowed errors:
+0-9 bp: 0; 10-16 bp: 1
+
+Bases preceding removed adapters:
+  A: 9.9%
+  C: 72.1%
+  G: 5.4%
+  T: 12.6%
+  none/other: 0.0%
+
+Overview of removed sequences
+length	count	expect	max.err	error counts
+3	20853	26959.9	0	20853
+4	8068	6740.0	0	8068
+5	6861	1685.0	0	6861
+6	7289	421.2	0	7289
+7	7714	105.3	0	7714
+8	8241	26.3	0	8241
+9	16	6.6	0	7 9
+10	95	1.6	1	0 95
+11	13	0.4	1	0 13
+12	7	0.1	1	0 7
+
+=== Second read: Adapter 2 ===
+
+Sequence: TAGGCATGCGTCTAAT; Type: regular 3'; Length: 16; Trimmed: 30031 times.
+
+No. of allowed errors:
+0-9 bp: 0; 10-16 bp: 1
+
+Bases preceding removed adapters:
+  A: 20.2%
+  C: 7.2%
+  G: 28.8%
+  T: 43.8%
+  none/other: 0.0%
+
+Overview of removed sequences
+length	count	expect	max.err	error counts
+3	26696	26959.9	0	26696
+4	2682	6740.0	0	2682
+5	434	1685.0	0	434
+6	128	421.2	0	128
+7	47	105.3	0	47
+8	11	26.3	0	11
+9	12	6.6	0	10 2
+10	12	1.6	1	0 12
+11	9	0.4	1	0 9
+
+This is cutadapt 1.15 with Python 2.7.14
+Command line parameters: -a ACTCGCTAACTGCATA -A ACTCGCTAACTGCATA -o /project/grice/storage/HiSeq/WGS/HiSeq_19/TrimmedFastqs/DORN1384_trimmed_R1.fastq -p /project/grice/storage/HiSeq/WGS/HiSeq_19/TrimmedFastqs/DORN1384_trimmed_R2.fastq /project/grice/storage/HiSeq/WGS/HiSeq_19/DORN1384_R1.fastq /project/grice/storage/HiSeq/WGS/HiSeq_19/DORN1384_R2.fastq
+Running on 1 core
+Trimming 2 adapters with at most 10.0% errors in paired-end mode ...
+Finished in 46.13 s (33 us/read; 1.81 M reads/minute).
+
+=== Summary ===
+
+Total read pairs processed:          1,393,912
+  Read 1 with adapter:                  66,902 (4.8%)
+  Read 2 with adapter:                  17,444 (1.3%)
+Pairs written (passing filters):     1,393,912 (100.0%)
+
+Total basepairs processed:   351,265,824 bp
+  Read 1:   175,632,912 bp
+  Read 2:   175,632,912 bp
+Total written (filtered):    350,784,091 bp (99.9%)
+  Read 1:   175,206,425 bp
+  Read 2:   175,577,666 bp
+
+=== First read: Adapter 1 ===
+
+Sequence: ACTCGCTAACTGCATA; Type: regular 3'; Length: 16; Trimmed: 66902 times.
+
+No. of allowed errors:
+0-9 bp: 0; 10-16 bp: 1
+
+Bases preceding removed adapters:
+  A: 10.2%
+  C: 77.9%
+  G: 3.8%
+  T: 8.1%
+  none/other: 0.0%
+
+Overview of removed sequences
+length	count	expect	max.err	error counts
+3	19629	21779.9	0	19629
+4	6143	5445.0	0	6143
+5	4962	1361.2	0	4962
+6	5179	340.3	0	5179
+7	5660	85.1	0	5660
+8	5981	21.3	0	5981
+9	5833	5.3	0	5822 11
+10	5252	1.3	1	91 5161
+11	4498	0.3	1	2 4496
+12	3764	0.1	1	0 3764
+13	1	0.0	1	0 1
+
+=== Second read: Adapter 2 ===
+
+Sequence: ACTCGCTAACTGCATA; Type: regular 3'; Length: 16; Trimmed: 17444 times.
+
+No. of allowed errors:
+0-9 bp: 0; 10-16 bp: 1
+
+Bases preceding removed adapters:
+  A: 37.2%
+  C: 19.0%
+  G: 14.0%
+  T: 29.9%
+  none/other: 0.0%
+
+Overview of removed sequences
+length	count	expect	max.err	error counts
+3	15269	21779.9	0	15269
+4	1737	5445.0	0	1737
+5	308	1361.2	0	308
+6	69	340.3	0	69
+7	20	85.1	0	20
+8	9	21.3	0	9
+9	4	5.3	0	2 2
+10	23	1.3	1	0 23
+11	3	0.3	1	0 3
+13	2	0.0	1	0 2
+
+This is cutadapt 1.15 with Python 2.7.14
+Command line parameters: -a GGAGCTACTATCCTCT -A GGAGCTACTATCCTCT -o /project/grice/storage/HiSeq/WGS/HiSeq_19/TrimmedFastqs/DORN1395_trimmed_R1.fastq -p /project/grice/storage/HiSeq/WGS/HiSeq_19/TrimmedFastqs/DORN1395_trimmed_R2.fastq /project/grice/storage/HiSeq/WGS/HiSeq_19/DORN1395_R1.fastq /project/grice/storage/HiSeq/WGS/HiSeq_19/DORN1395_R2.fastq
+Running on 1 core
+Trimming 2 adapters with at most 10.0% errors in paired-end mode ...
+Finished in 65.41 s (31 us/read; 1.93 M reads/minute).
+
+=== Summary ===
+
+Total read pairs processed:          2,108,023
+  Read 1 with adapter:                 156,919 (7.4%)
+  Read 2 with adapter:                  24,739 (1.2%)
+Pairs written (passing filters):     2,108,023 (100.0%)
+
+Total basepairs processed:   531,221,796 bp
+  Read 1:   265,610,898 bp
+  Read 2:   265,610,898 bp
+Total written (filtered):    530,030,450 bp (99.8%)
+  Read 1:   264,496,514 bp
+  Read 2:   265,533,936 bp
+
+=== First read: Adapter 1 ===
+
+Sequence: GGAGCTACTATCCTCT; Type: regular 3'; Length: 16; Trimmed: 156919 times.
+
+No. of allowed errors:
+0-9 bp: 0; 10-16 bp: 1
+
+Bases preceding removed adapters:
+  A: 1.7%
+  C: 96.1%
+  G: 0.7%
+  T: 1.6%
+  none/other: 0.0%
+WARNING:
+    The adapter is preceded by "C" extremely often.
+    The provided adapter sequence may be incomplete.
+    To fix the problem, add "C" to the beginning of the adapter sequence.
+
+Overview of removed sequences
+length	count	expect	max.err	error counts
+3	17798	32937.9	0	17798
+4	14007	8234.5	0	14007
+5	15239	2058.6	0	15239
+6	17585	514.7	0	17585
+7	18917	128.7	0	18917
+8	19780	32.2	0	19780
+9	19712	8.0	0	6 19706
+10	17797	2.0	1	0 17797
+11	15877	0.5	1	0 15877
+12	118	0.1	1	0 118
+13	89	0.0	1	0 89
+
+=== Second read: Adapter 2 ===
+
+Sequence: GGAGCTACTATCCTCT; Type: regular 3'; Length: 16; Trimmed: 24739 times.
+
+No. of allowed errors:
+0-9 bp: 0; 10-16 bp: 1
+
+Overview of removed sequences
+length	count	expect	max.err	error counts
+3	22555	32937.9	0	22555
+4	1836	8234.5	0	1836
+5	232	2058.6	0	232
+6	79	514.7	0	79
+7	16	128.7	0	16
+8	2	32.2	0	2
+9	5	8.0	0	1 4
+10	9	2.0	1	0 9
+11	4	0.5	1	0 4
+12	1	0.1	1	0 1
+
+WARNING:
+    One or more of your adapter sequences may be incomplete.
+    Please see the detailed output above.
+This is cutadapt 1.15 with Python 2.7.14
+Command line parameters: -a TAGGCATGCTCTCTAT -A TAGGCATGCTCTCTAT -o /project/grice/storage/HiSeq/WGS/HiSeq_19/TrimmedFastqs/DORN659_trimmed_R1.fastq -p /project/grice/storage/HiSeq/WGS/HiSeq_19/TrimmedFastqs/DORN659_trimmed_R2.fastq /project/grice/storage/HiSeq/WGS/HiSeq_19/DORN659_R1.fastq /project/grice/storage/HiSeq/WGS/HiSeq_19/DORN659_R2.fastq
+Running on 1 core
+Trimming 2 adapters with at most 10.0% errors in paired-end mode ...
+Finished in 52.95 s (34 us/read; 1.76 M reads/minute).
+
+=== Summary ===
+
+Total read pairs processed:          1,552,495
+  Read 1 with adapter:                  72,218 (4.7%)
+  Read 2 with adapter:                  26,445 (1.7%)
+Pairs written (passing filters):     1,552,495 (100.0%)
+
+Total basepairs processed:   391,228,740 bp
+  Read 1:   195,614,370 bp
+  Read 2:   195,614,370 bp
+Total written (filtered):    390,660,059 bp (99.9%)
+  Read 1:   195,129,370 bp
+  Read 2:   195,530,689 bp
+
+=== First read: Adapter 1 ===
+
+Sequence: TAGGCATGCTCTCTAT; Type: regular 3'; Length: 16; Trimmed: 72218 times.
+
+No. of allowed errors:
+0-9 bp: 0; 10-16 bp: 1
+
+Bases preceding removed adapters:
+  A: 7.4%
+  C: 79.1%
+  G: 4.1%
+  T: 9.4%
+  none/other: 0.0%
+
+Overview of removed sequences
+length	count	expect	max.err	error counts
+3	18842	24257.7	0	18842
+4	7038	6064.4	0	7038
+5	6114	1516.1	0	6114
+6	6392	379.0	0	6392
+7	6848	94.8	0	6848
+8	7091	23.7	0	7091
+9	20	5.9	0	8 12
+10	5976	1.5	1	3 5973
+11	5359	0.4	1	4 5355
+12	4435	0.1	1	2 4433
+13	4045	0.0	1	1 4044
+14	4	0.0	1	0 4
+15	1	0.0	1	0 1
+17	1	0.0	1	0 1
+18	1	0.0	1	0 1
+19	3	0.0	1	0 3
+21	1	0.0	1	0 1
+25	1	0.0	1	0 1
+26	1	0.0	1	0 1
+27	2	0.0	1	0 2
+28	5	0.0	1	0 5
+30	2	0.0	1	0 2
+31	4	0.0	1	0 4
+32	1	0.0	1	0 1
+33	1	0.0	1	0 1
+34	1	0.0	1	0 1
+35	1	0.0	1	0 1
+36	3	0.0	1	0 3
+37	2	0.0	1	0 2
+38	1	0.0	1	0 1
+39	3	0.0	1	0 3
+41	3	0.0	1	0 3
+43	1	0.0	1	0 1
+44	1	0.0	1	0 1
+46	2	0.0	1	0 2
+47	3	0.0	1	0 3
+48	1	0.0	1	0 1
+50	1	0.0	1	0 1
+54	1	0.0	1	0 1
+58	1	0.0	1	0 1
+59	3	0.0	1	0 3
+63	1	0.0	1	0 1
+65	1	0.0	1	0 1
+
+=== Second read: Adapter 2 ===
+
+Sequence: TAGGCATGCTCTCTAT; Type: regular 3'; Length: 16; Trimmed: 26445 times.
+
+No. of allowed errors:
+0-9 bp: 0; 10-16 bp: 1
+
+Bases preceding removed adapters:
+  A: 37.6%
+  C: 7.4%
+  G: 29.2%
+  T: 25.9%
+  none/other: 0.0%
+
+Overview of removed sequences
+length	count	expect	max.err	error counts
+3	23176	24257.7	0	23176
+4	2648	6064.4	0	2648
+5	391	1516.1	0	391
+6	137	379.0	0	137
+7	41	94.8	0	41
+8	5	23.7	0	5
+9	20	5.9	0	7 13
+10	21	1.5	1	0 21
+11	5	0.4	1	0 5
+12	1	0.1	1	0 1
+
+
+
+PS:
+
+Read file <cutadapt1.e> for stderr output of this job.
+
