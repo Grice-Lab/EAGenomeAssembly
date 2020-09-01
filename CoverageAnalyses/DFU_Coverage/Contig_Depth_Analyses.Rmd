@@ -1,0 +1,72 @@
+---
+title: "DFU Contig Depth Analysis"
+output:
+  html_document:
+    df_print: paged
+  html_notebook: default
+  pdf_document: default
+---
+
+In this notebook, I'll go through the depth-based QC process for the DFU contigs. Specifically, for each genome, I'll consider the distribution of coverages (mean) across contigs. I'll flag contigs with unusually high and unusually low coverages, and save a list of them to follow up on with blast searches (or krakenuniq/other k-mer based search method). This way, I can identify potential artefact contigs / contaminant contigs, and try to explain high coverage contigs (which could be plasmid DNA, for example)
+
+```{r,warning=FALSE}
+library(dplyr)
+library(ggplot2)
+library(tidyr)
+library(forcats)
+library(grid)
+```
+
+```{r}
+setwd("/Users/amycampbell/Desktop/Club_Grice/Club_Grice/EAGenomeAssembly/CoverageAnalyses")
+
+DFU_stats = data.frame(read.table("DFU_Covg_stats.tsv", header=T)) 
+DFU_stats = DFU_stats %>% filter(!grepl("_backup", identifer))
+DFU_stats = DFU_stats %>% separate(identifer, c("Genome", "ContigID"), "_", remove=F)
+DFU_statsDORNS = DFU_stats %>% filter(grepl("DORN", identifer))
+DFU_statsDORNS = DFU_statsDORNS %>% group_by(Genome) %>% mutate(MedianContigLength=median(length))
+
+```
+
+
+```{r fig2, fig.width=20, fig.height=10, echo=F}
+ggplot(DFU_statsDORNS, aes(x=fct_reorder(as.factor(Genome), mean_cov, median), y=log10(mean_cov+1),  fill=MedianContigLength*.001)) + scale_fill_gradient(low="white", high="darkred") + geom_boxplot(outlier.size=.1, outlier.color=NULL, outlier.fill=NULL) + xlab("Genome") + ylab("Log10-transformed Mean Coverage by Contig")  + labs(fill="Median Contig Length of Assembly (kb)") +  theme_bw() + ggtitle("DORN Genome Contig Coverages") + theme(legend.position="bottom", axis.text.x=element_blank(), panel.grid.major = element_blank(),
+panel.grid.minor = element_blank(), legend.title=element_text(size=16), axis.title.x=element_text(size=16), axis.title.y=element_text(size=16), plot.title=element_text(size=20, hjust=.5, face="bold"))  +  geom_hline(yintercept = log10(101), color="#008B8B", linetype="dashed") + geom_hline(yintercept=log10(51),color="#008B8B",linetype="dashed" )
+#grid.text("100X", x = unit(220, "native"), y = unit(1, "native"), vjust=.25, hjust=1)
+```
+ This plot shows the distribution of *mean coverage by contig* for each *S. aureus* genome in our collection, prior to removing any predicted contaminant contigs. Most genomes have a median contig depth around 10^2^ or 100X (which is what we aimed for in our HiSeq run based on the length of the Staph genome), but there's a great deal of variability by contig in every genome, particularly in genomes with shorter contigs(more gaps). 
+ 
+Next, let's look at the coverage 'outlier' contigs (as defined by falling out of 1st quartile + IQR, 3rd quartile - IQR; these outliers correspond to the single points on the graph above.) This is a rudimentary way of calculating outliers, but starting simple at first. The idea here is to identify contigs with outlier coverages. While 'high coverage' outliers aren't so much of a problem (we should check that they're not there as the result of contamination, but it's possible their high coverage is just a sequencing artifact associated with the region's NT composition; it's difficult to assess *duplications* or other copy number variations using illumina-only sequencing, but we should check that at least they contain S aureus genes).
+
+
+```{r}
+# Filter to lengths >500bp 
+DFU_statsDORNS = DFU_statsDORNS %>% filter(ContigID !="*")
+DFU_statsDORNS = DFU_statsDORNS %>% filter(length >= 500)
+
+DFU_statsDORNS = DFU_statsDORNS %>% group_by(Genome) %>% mutate(LowCutoff = (median(mean_cov)-(1.5*IQR(mean_cov)))) 
+DFU_statsDORNS = DFU_statsDORNS %>% group_by(Genome) %>% mutate(HighCutoff = (median(mean_cov)+(1.5*IQR(mean_cov))))
+
+# Only 15 contigs total with <10x coverage 
+DFU_statsDORNS = DFU_statsDORNS %>% filter(mean_cov >10)
+
+DFU_statsDORNS = DFU_statsDORNS %>% mutate(isLowOutlier = ((mean_cov < LowCutoff)))
+DFU_statsDORNS = DFU_statsDORNS %>% mutate(isHighOutlier = (mean_cov > HighCutoff))
+
+# Having removed the '*' contigs and having filtered to >=10X coverage / >500 bp length in the DFU_statsDORNS table, 
+# label the contigs which remain based on "Keep" or "FollowUp"
+DFU_statsDORNS = DFU_statsDORNS %>% mutate(SortContig = case_when(isLowOutlier ~ "FollowUp",
+                                                                  isHighOutlier ~ "FollowUp",
+                                                                  TRUE~"keep"
+                                                                  
+                                                                  ))
+# HighOutliers = DFU_statsDORNS %>% filter(isHighOutlier) %>% filter(ContigID != "*")
+
+write.csv(DFU_statsDORNS[c("identifer", "Genome", "ContigID", "SortContig")], file="ContigFilteringFates.csv")
+
+
+
+NotOutlier_NotFiltered = DFU_statsDORNS %>% filter(!isLowOutlier & !isHighOutlier & (mean_cov >= 10)) %>% filter(ContigID != "*")
+
+
+```
