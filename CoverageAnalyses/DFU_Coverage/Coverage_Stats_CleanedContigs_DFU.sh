@@ -19,29 +19,29 @@ export BOWTIE2_INDEXES=/home/acampbe/DFU/data/AlignmentCoverage/BowtieDatabase/
 # Trimmed/quality-filtered reads
 Raw_FastQs="/project/grice/storage/HiSeq/WGS/HiSeq_19/TrimmedFastqs_TrimGalore/"
 
-# Make a bowtie database for each of the cleaned assemblies 
-#for filename in /project/grice/storage/HiSeq/WGS/HiSeq_19/AssemblyFastas/DFU100_Cleaned_Assemblies/FinalContigs/*.fasta; do 
- #       filenamestring=$(basename $filename)
-  #      ext="_cleaned.fasta"
-   #     blank=""
-    #    noext=${filenamestring/$ext/$blank}
+Make a bowtie database for each of the cleaned assemblies 
+for filename in /project/grice/storage/HiSeq/WGS/HiSeq_19/AssemblyFastas/DFU100_Cleaned_Assemblies/FinalContigs/*.fasta; do 
+        filenamestring=$(basename $filename)
+        ext="_cleaned.fasta"
+        blank=""
+        noext=${filenamestring/$ext/$blank}
         
-     #   bowtie2-build $filename $noext
-      #  mv *.bt2 /home/acampbe/DFU/data/AlignmentCoverage/BowtieDatabase/
+        bowtie2-build $filename $noext
+        mv *.bt2 /home/acampbe/DFU/data/AlignmentCoverage/BowtieDatabase/
         
-       # sam_ext=".sam"
-       # fwd_Ext="trimmedgalore_val_1.fastq"
-       # rev_Ext="trimmedgalore_val_2.fastq"
+        sam_ext=".sam"
+        fwd_Ext="trimmedgalore_val_1.fastq"
+        rev_Ext="trimmedgalore_val_2.fastq"
 
 
-#        fwd_reads=$Raw_FastQs$noext$fwd_Ext
- #       rev_reads=$Raw_FastQs$noext$rev_Ext
+        fwd_reads=$Raw_FastQs$noext$fwd_Ext
+        rev_reads=$Raw_FastQs$noext$rev_Ext
 
-  #      samfile=$noext$sam_ext
+        samfile=$noext$sam_ext
         
-   #     bowtie2 -x $noext -1 $fwd_reads -2 $rev_reads -S $outputfolder$samfile
+        bowtie2 -x $noext -1 $fwd_reads -2 $rev_reads -S $outputfolder$samfile
 
-#done
+done
 
 
 ##########################################################
@@ -83,20 +83,20 @@ Raw_FastQs="/project/grice/storage/HiSeq/WGS/HiSeq_19/TrimmedFastqs_TrimGalore/"
 
 # Build a bowtie database for each reference genome we'll use
 
-#bowtie2-build /home/acampbe/DFU/data/WGS_2020/RoaryResults/SAReferences/CC1_MW2.fasta CC1_MW2  
-#bowtie2-build /home/acampbe/DFU/data/WGS_2020/RoaryResults/SAReferences/USA300_FPR3757.fasta USA300_FPR3757
-#bowtie2-build /home/acampbe/DFU/data/WGS_2020/RoaryResults/SAReferences/CC5_N315.fasta CC5_N315   
-#bowtie2-build /home/acampbe/DFU/data/WGS_2020/RoaryResults/SAReferences/USA100_AR465.fasta USA100_AR465
-#bowtie2-build /home/acampbe/DFU/data/WGS_2020/RoaryResults/SAReferences/CC8_NCTC8325.fasta CC8_NCTC8325
-#bowtie2-build /home/acampbe/DFU/data/WGS_2020/RoaryResults/SAReferences/CC398_ATCC6538.fasta CC398_ATCC6538
-#bowtie2-build /home/acampbe/DFU/data/WGS_2020/RoaryResults/SAReferences/CC30_MRSA252.fasta CC30_MRSA252
-#bowtie2-build /home/acampbe/DFU/data/WGS_2020/RoaryResults/SAReferences/SA_UP_1150.fasta SA_UP_1150
-#bowtie2-build /home/acampbe/DFU/data/WGS_2020/RoaryResults/SAReferences/CC72_CN1.fasta CC72_CN1
-#bowtie2-build /home/acampbe/DFU/data/WGS_2020/RoaryResults/SAReferences/SA_502A.fasta SA_502A
-#bowtie2-build /home/acampbe/DFU/data/WGS_2020/RoaryResults/SAReferences/SA_CFSAN007883.fasta SA_CFSAN007883
-#bowtie2-build /home/acampbe/DFU/data/WGS_2020/RoaryResults/SAReferences/SA_AR464.fasta SA_AR464
+bowtie2-build /home/acampbe/DFU/data/WGS_2020/RoaryResults/SAReferences/CC1_MW2.fasta CC1_MW2  
+bowtie2-build /home/acampbe/DFU/data/WGS_2020/RoaryResults/SAReferences/USA300_FPR3757.fasta USA300_FPR3757
+bowtie2-build /home/acampbe/DFU/data/WGS_2020/RoaryResults/SAReferences/CC5_N315.fasta CC5_N315   
+bowtie2-build /home/acampbe/DFU/data/WGS_2020/RoaryResults/SAReferences/USA100_AR465.fasta USA100_AR465
+bowtie2-build /home/acampbe/DFU/data/WGS_2020/RoaryResults/SAReferences/CC8_NCTC8325.fasta CC8_NCTC8325
+bowtie2-build /home/acampbe/DFU/data/WGS_2020/RoaryResults/SAReferences/CC398_ATCC6538.fasta CC398_ATCC6538
+bowtie2-build /home/acampbe/DFU/data/WGS_2020/RoaryResults/SAReferences/CC30_MRSA252.fasta CC30_MRSA252
+bowtie2-build /home/acampbe/DFU/data/WGS_2020/RoaryResults/SAReferences/SA_UP_1150.fasta SA_UP_1150
+bowtie2-build /home/acampbe/DFU/data/WGS_2020/RoaryResults/SAReferences/CC72_CN1.fasta CC72_CN1
+bowtie2-build /home/acampbe/DFU/data/WGS_2020/RoaryResults/SAReferences/SA_502A.fasta SA_502A
+bowtie2-build /home/acampbe/DFU/data/WGS_2020/RoaryResults/SAReferences/SA_CFSAN007883.fasta SA_CFSAN007883
+bowtie2-build /home/acampbe/DFU/data/WGS_2020/RoaryResults/SAReferences/SA_AR464.fasta SA_AR464
 
-#mv *.bt2 /home/acampbe/DFU/data/AlignmentCoverage/BowtieDatabase/
+mv *.bt2 /home/acampbe/DFU/data/AlignmentCoverage/BowtieDatabase/
 
 #$inputdir$line$fasta1
 isolatereadsfolder="/project/grice/storage/HiSeq/WGS/HiSeq_19/TrimmedFastqs_TrimGalore/"
