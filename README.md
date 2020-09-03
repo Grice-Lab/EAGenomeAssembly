@@ -57,4 +57,4 @@ Here, we run [SPAdes](http://spades.bioinf.spbau.ru/release3.11.1/manual.html) u
 
 > source /home/acampbe/software/miniconda3/bin/activate EAGenomeEnv
 
-> unicycler -1 /project/grice/storage/HiSeq/WGS/HiSeq_19/TrimmedFastqs_TrimGalore/DORN2148trimmedgalore_val_1.fastq -2 /project/grice/storage/HiSeq/WGS/HiSeq_19/TrimmedFastqs_TrimGalore/<genus.species>trimmedgalore_val_2.fastq -o /project/grice/storage/HiSeq/WGS/HiSeq_19/UnicyclerAssemble/DORN2148/ 
+> unicycler -1 /project/grice/storage/HiSeq/WGS/HiSeq_19/TrimmedFastqs_TrimGalore/DORN2148trimmedgalore_val_1.fastq -2 /project/grice/storage/HiSeq/WGS/HiSeq_19/TrimmedFastqs_TrimGalore/DORN2148trimmedgalore_val_2.fastq -o /project/grice/storage/HiSeq/WGS/HiSeq_19/UnicyclerAssemble/DORN2148/ 
