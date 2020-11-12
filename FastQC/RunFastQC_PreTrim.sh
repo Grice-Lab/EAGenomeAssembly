@@ -39,7 +39,7 @@ CONDA_ACTIVATE_PATH=$1
 OUTPUT=$2
 READSPATH=$3
 
-source $CONDA_ACTIVATE_PATH EAGenomeEnv
+source $CONDA_ACTIVATE_PATH TrimmingEnvironment
 
 mkdir -p $OUTPUT
 
