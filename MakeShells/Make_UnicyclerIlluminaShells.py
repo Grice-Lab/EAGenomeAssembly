@@ -41,20 +41,27 @@ parser.add_argument('--forwardInputExtension',default="_val_1.fastq", type=str, 
 parser.add_argument('--shellscriptname', default="Run_UnicyclerSpades", type=str,
 help="By default, shellscript filenames are in the format of Run_UniCyclerSpades_<#>.sh." + "Use this flag to change Run_UnicyclerSpades to something else")
 
+parser.add_argument('--filterstring', type=str, default="")
+
 #parser.add_argument('--mappingpath', type=str, help="Path to the metadata used for writing cutadapt calls")
 args = parser.parse_args()
 
-#mymap = args.mappingpath
+# Parse user input
+##################
 numshells = int(args.nshells)
 input = str(args.inputdirname)
 name = str(args.shellscriptname)
 outputdir_unicycler = os.path.abspath(args.outputdir_unicycler)
 outputdirshells = os.path.abspath(args.outputdirshells)
 extension = str(args.forwardInputExtension)
+filterstring = str(args.filterstring)
+
 
 filelist = os.listdir(input)
 fnamelist = os.listdir(input)
 fnamelist = list(filter(lambda x: extension in str(x), fnamelist))
+if filterstring != "":
+    fnamelist = list(filter(lambda x: filterstring in str(x), fnamelist))
 subsize = len(fnamelist) // numshells
 
 # Lazily distribute the samples across shell scripts
@@ -73,7 +80,7 @@ for c in range(len(chunk_array)):
     otpt = open(outputfile, "w")
     otpt.write("#!/bin/bash\n")
     otpt.write(str("mkdir -p "+ str(outputdir_unicycler)+ "\n"))
-    otpt.write(str("source " + str(args.conda_activatepath) + " AssemblyEnv\n"))
+    otpt.write(str("source " + str(args.conda_activatepath) + " EAGenomeEnv\n"))
     for j in chunk_array[c]:
         jstring = j.replace(extension, "")
         jrev = extension.replace("1", "2")
