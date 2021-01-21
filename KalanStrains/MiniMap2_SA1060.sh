@@ -5,10 +5,10 @@
 
 source /home/acampbe/software/miniconda3/bin/activate BowtieEnv
  
-file1060="/project/grice/storage/HiSeq/WGS/HiSeq_19/AssemblyFastas/DFU100_StaphAssemblies/SA1060_contigs.fasta"
+file1060="/project/grice/storage/HiSeq/WGS/HiSeq_19/AssemblyFastas/DFU100_Assemblies/SA1060_contigs.fasta"
 mkdir -p "/home/acampbe/DFU/data/WGS_2020/SA1060_MiniMap2/"
 SA1060="SA1060"
-for dorn in /project/grice/storage/HiSeq/WGS/HiSeq_19/AssemblyFastas/DFU100_StaphAssemblies/*; do
+for dorn in /project/grice/storage/HiSeq/WGS/HiSeq_19/AssemblyFastas/DFU100_Assemblies/DORN*; do
     
 	base=$(basename $dorn)
 	ext="_contigs.fasta"
