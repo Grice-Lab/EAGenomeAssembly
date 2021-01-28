@@ -1,0 +1,39 @@
+# Amy Campbell
+# January 2021
+
+from Bio import SeqIO
+ReadPath = "/project/grice/storage/HiSeq/WGS/HiSeq_19/TrimmedFastqs_TrimGalore/"
+
+outputfile_fwd = open("/project/grice/storage/HiSeq/WGS/HiSeq_19/FakeChimeraDORN1885_DORN962_val_1.fastq", "w")
+outputfile_rev = open("/project/grice/storage/HiSeq/WGS/HiSeq_19/FakeChimeraDORN1885_DORN962_val_2.fastq", "w")
+
+DORN1885Fwd = open("/project/grice/storage/HiSeq/WGS/HiSeq_19/TrimmedFastqs_TrimGalore/DORN1885trimmedgalore_val_1", "r")
+DORN1885FwdString = DORN1885Fwd.read()
+DORN1885FwdList = DORN1885FwdString.split("@")
+
+DORN1885Rev = open("/project/grice/storage/HiSeq/WGS/HiSeq_19/TrimmedFastqs_TrimGalore/DORN1885trimmedgalore_val_2", "r")
+DORN1885RevString = DORN1885Rev.read()
+DORN1885RevList = DORN1885RevString.split("@")
+
+DORN962Fwd = open("/project/grice/storage/HiSeq/WGS/HiSeq_19/TrimmedFastqs_TrimGalore/DORN962trimmedgalore_val_1", "r")
+DORN962FwdString = DORN962Fwd.read()
+DORN962FwdList = DORN962FwdString.split("@")
+
+DORN962Rev = open("/project/grice/storage/HiSeq/WGS/HiSeq_19/TrimmedFastqs_TrimGalore/DORN962trimmedgalore_val_2", "r")
+DORN962RevString = DORN962Rev.read()
+DORN962RevList = DORN962RevString.split("@")
+
+for i in range(length(DORN1885FwdList)):
+    # evens only
+    if (i%2 == 0):
+        outputfile_fwd.write(str("@" + DORN1885FwdList[i]))
+        outputfile_rev.write(str("@" + DORN1885RevList[i]))
+
+for j in range(length(DORN962FwdList)):
+    # odds only
+    if (i%2 ==1):
+        outputfile_fwd.write(str("@" + DORN962FwdList[j]))
+        outputfile_rev.write(str("@" + DORN962RevList[j]))
+
+outputfile_fwd.close()
+output_rev.close()
