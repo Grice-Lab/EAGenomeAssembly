@@ -10,7 +10,7 @@
 import numpy
 import os
 
-FileDirectory="/Users/amycampbell/Desktop/GriceLabGit/EAGenomeAssembly/CoverageAnalyses/DFU_Coverage/testfolder"
+FileDirectory="/home/acampbe/DFU/data/AlignmentCoverage/BCF_Variant_Calling"
 filelist = os.listdir(FileDirectory)
 
 def getDepth(row):
