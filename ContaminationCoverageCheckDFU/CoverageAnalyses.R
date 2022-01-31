@@ -5,7 +5,7 @@
 library(dplyr)
 library(ggplot2)
 library(tidyr)
-library(grid)
+library(forcats)
 
 coveragestatspath="/home/acampbe/DFU/data/AlignmentCoverage/CompleteCoverageData/AllCoverageStats.tsv"
 outputfatespath="/home/acampbe/DFU/data/AlignmentCoverage/CompleteCoverageData/ContigFilteringFates.csv"
